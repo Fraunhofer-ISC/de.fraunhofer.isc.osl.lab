@@ -1,0 +1,34 @@
+{
+    "type": [
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9"
+    ],
+    "uuid": "c9ccfe2e-330d-4ddc-b33f-02454fff6fcc",
+    "label": [
+        {
+            "text": "GHS01: Explosive substance",
+            "lang": "en"
+        },
+        {
+            "text": "GHS01: Explosiver Stoff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Reactive substance containing a large amount of potential energy that can cause an explosion. See also https://www.wikidata.org/wiki/Q51080746, https://www.wikidata.org/wiki/Q12870",
+            "lang": "en"
+        },
+        {
+            "text": "Reaktive Substanz, die eine große Menge an potenzieller Energie enthält, die eine Explosion hervorrufen kann",
+            "lang": "de"
+        }
+    ],
+    "short_name": [
+        {
+            "text": "GHS01",
+            "lang": "en"
+        }
+    ],
+    "image": "File:OSW5a292d489f63435db2dbd2208156e34c.svg",
+    "name": "Ghs01ExplosiveSubstance"
+}

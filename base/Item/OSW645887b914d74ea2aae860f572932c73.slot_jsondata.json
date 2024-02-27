@@ -1,0 +1,27 @@
+{
+    "type": [
+        "Category:OSW9d4553ced7324cdc9088cdb786c339f8"
+    ],
+    "uuid": "645887b9-14d7-4ea2-aae8-60f572932c73",
+    "label": [
+        {
+            "text": "Temperature sensitive",
+            "lang": "en"
+        },
+        {
+            "text": "Temperaturempfindlich",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Must be protected from high temperatures as these can cause irreversible changes",
+            "lang": "en"
+        },
+        {
+            "text": "Muss vor hohen Temperaturen geschützt werden da diese irreversible Veränderungen verursachen können",
+            "lang": "de"
+        }
+    ],
+    "name": "TemperatureSensitive"
+}

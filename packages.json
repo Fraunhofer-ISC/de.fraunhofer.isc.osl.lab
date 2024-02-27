@@ -1,0 +1,321 @@
+{
+    "publisher": "Fraunhofer-ISC",
+    "publisherURL": "https://github.com/Fraunhofer-ISC/de.fraunhofer.isc.osl.lab",
+    "author": [
+        "Simon Stier"
+    ],
+    "language": "en",
+    "licenseName": "CC BY-NC 4.0",
+    "packages": {
+        "ISC Base": {
+            "globalID": "de.fraunhofer.isc.osl.lab",
+            "label": "ISC Base",
+            "description": "Extends the OpenSemanticWorld Package 'world.opensemantic.lab' with concepts and pages that are specific to the Fraunhofer ISC.",
+            "version": "0.1.0",
+            "requiredPackages": [
+                "world.opensemantic.lab"
+            ],
+            "baseURL": "https://raw.githubusercontent.com/Fraunhofer-ISC/de.fraunhofer.isc.osl.lab/main/base/",
+            "pages": [
+                {
+                    "name": "OSWd29aa2537f434fbe87c74ded34ee34cb",
+                    "label": "ZaaKleinauftrag",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWd29aa2537f434fbe87c74ded34ee34cb.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWd29aa2537f434fbe87c74ded34ee34cb.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSWd29aa2537f434fbe87c74ded34ee34cb.slot_footer_template.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWd29aa2537f434fbe87c74ded34ee34cb.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWd29aa2537f434fbe87c74ded34ee34cb.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWd29aa2537f434fbe87c74ded34ee34cb.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW3a86b2496454417296ad2cd784194da6",
+                    "label": "IscZaaKavTabs",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW3a86b2496454417296ad2cd784194da6.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW3a86b2496454417296ad2cd784194da6.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW3a86b2496454417296ad2cd784194da6.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW3a86b2496454417296ad2cd784194da6.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW3a86b2496454417296ad2cd784194da6.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW89d01b6ec9e9412aa6fadf244f59cc78",
+                    "label": "ZaaKleinauftragZugewiesen",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW89d01b6ec9e9412aa6fadf244f59cc78.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW89d01b6ec9e9412aa6fadf244f59cc78.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW89d01b6ec9e9412aa6fadf244f59cc78.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW89d01b6ec9e9412aa6fadf244f59cc78.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW89d01b6ec9e9412aa6fadf244f59cc78.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW2b2649b89d1e4ae4866c8cd18e1652e2",
+                    "label": "AnalyticsTask",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW2b2649b89d1e4ae4866c8cd18e1652e2.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW2b2649b89d1e4ae4866c8cd18e1652e2.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW2b2649b89d1e4ae4866c8cd18e1652e2.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW2b2649b89d1e4ae4866c8cd18e1652e2.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW2b2649b89d1e4ae4866c8cd18e1652e2.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWbd354f0cbc7c41d38ee301be9bb3ce8d",
+                    "label": "ObjectStatus",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWbd354f0cbc7c41d38ee301be9bb3ce8d.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWbd354f0cbc7c41d38ee301be9bb3ce8d.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWbd354f0cbc7c41d38ee301be9bb3ce8d.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWbd354f0cbc7c41d38ee301be9bb3ce8d.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWbd354f0cbc7c41d38ee301be9bb3ce8d.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWfaa3d40356f64db0ae0852935ec9ccb6",
+                    "label": "Store",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWfaa3d40356f64db0ae0852935ec9ccb6.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWfaa3d40356f64db0ae0852935ec9ccb6.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWfaa3d40356f64db0ae0852935ec9ccb6.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWfaa3d40356f64db0ae0852935ec9ccb6.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW60bd050bf7c5459182fe638351d9cea7",
+                    "label": "SendBack",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW60bd050bf7c5459182fe638351d9cea7.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW60bd050bf7c5459182fe638351d9cea7.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW60bd050bf7c5459182fe638351d9cea7.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW60bd050bf7c5459182fe638351d9cea7.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWe44f5c0404d8422dbd3fafbc66687264",
+                    "label": "Dispose",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWe44f5c0404d8422dbd3fafbc66687264.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWe44f5c0404d8422dbd3fafbc66687264.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWe44f5c0404d8422dbd3fafbc66687264.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWe44f5c0404d8422dbd3fafbc66687264.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWae1ec765ea47421695e9e8af5e212cb9",
+                    "label": "HazardClassification",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWae1ec765ea47421695e9e8af5e212cb9.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWae1ec765ea47421695e9e8af5e212cb9.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWae1ec765ea47421695e9e8af5e212cb9.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWae1ec765ea47421695e9e8af5e212cb9.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWae1ec765ea47421695e9e8af5e212cb9.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWc9ccfe2e330d4ddcb33f02454fff6fcc",
+                    "label": "Ghs01ExplosiveSubstance",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWc9ccfe2e330d4ddcb33f02454fff6fcc.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWc9ccfe2e330d4ddcb33f02454fff6fcc.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWc9ccfe2e330d4ddcb33f02454fff6fcc.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWc9ccfe2e330d4ddcb33f02454fff6fcc.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW5a292d489f63435db2dbd2208156e34c.svg",
+                    "label": "ExplosiveSvg",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW5a292d489f63435db2dbd2208156e34c.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSW5a292d489f63435db2dbd2208156e34c.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSW5a292d489f63435db2dbd2208156e34c.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSW5a292d489f63435db2dbd2208156e34c.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSW5a292d489f63435db2dbd2208156e34c.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW052811fa2436493aa9ddc5f035542e21",
+                    "label": "Ghs02FlammableSubstance",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW052811fa2436493aa9ddc5f035542e21.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW052811fa2436493aa9ddc5f035542e21.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW052811fa2436493aa9ddc5f035542e21.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW052811fa2436493aa9ddc5f035542e21.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW689bd7a4e4e34068844b1463ec0c9721.svg",
+                    "label": "FlammableSvg",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW689bd7a4e4e34068844b1463ec0c9721.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSW689bd7a4e4e34068844b1463ec0c9721.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSW689bd7a4e4e34068844b1463ec0c9721.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSW689bd7a4e4e34068844b1463ec0c9721.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSW689bd7a4e4e34068844b1463ec0c9721.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW9d4553ced7324cdc9088cdb786c339f8",
+                    "label": "SubstanceClassification",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW9d4553ced7324cdc9088cdb786c339f8.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW9d4553ced7324cdc9088cdb786c339f8.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW9d4553ced7324cdc9088cdb786c339f8.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW9d4553ced7324cdc9088cdb786c339f8.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW9d4553ced7324cdc9088cdb786c339f8.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW645887b914d74ea2aae860f572932c73",
+                    "label": "TemperatureSensitive",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW645887b914d74ea2aae860f572932c73.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW645887b914d74ea2aae860f572932c73.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW645887b914d74ea2aae860f572932c73.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW645887b914d74ea2aae860f572932c73.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW92db60f6a7e14865afc8ddb1394f5333",
+                    "label": "UnknownComposition",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW92db60f6a7e14865afc8ddb1394f5333.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW92db60f6a7e14865afc8ddb1394f5333.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW92db60f6a7e14865afc8ddb1394f5333.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW92db60f6a7e14865afc8ddb1394f5333.slot_jsondata.json"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "subclass_of": [
+        "Category:OSW2c32802be59040248c85eda3479d484c"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "bd354f0c-bc7c-41d3-8ee3-01be9bb3ce8d",
+    "label": [
+        {
+            "text": "Object Status",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "State of an object ",
+            "lang": "en"
+        }
+    ],
+    "name": "ObjectStatus"
+}

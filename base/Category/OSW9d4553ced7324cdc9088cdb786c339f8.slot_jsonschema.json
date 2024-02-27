@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "/wiki/Category:OSWd02741381aaa4709ae0753a0edc341ce?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWd02741381aaa4709ae0753a0edc341ce?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "9d4553ce-d732-4cdc-9088-cdb786c339f8",
+    "title": "SubstanceClassification",
+    "title*": {
+        "en": "Substance classification",
+        "de": "Substanz-Klassifizierung"
+    },
+    "description": "Additional chemical, physical or biological characteristics of a substance / sample",
+    "description*": {
+        "en": "Additional chemical, physical or biological characteristics of a substance / sample",
+        "de": "Zusätzliche chemische, physikalische oder biologische Merkmale einer Substanz / Probe"
+    },
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW9d4553ced7324cdc9088cdb786c339f8"
+            ]
+        }
+    }
+}

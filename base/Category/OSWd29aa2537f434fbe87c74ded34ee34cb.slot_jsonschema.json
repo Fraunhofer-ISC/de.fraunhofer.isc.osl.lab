@@ -1,0 +1,753 @@
+{
+    "@context": [
+        "/wiki/Category:OSWfa0d5710bc0f45819b61b65fc4fd9656?action=raw&slot=jsonschema",
+        {
+            "id": "Property:HasId",
+            "project": {
+                "@id": "Property:IsPartOf",
+                "@type": "@id"
+            },
+            "lab": {
+                "@id": "Property:IsPartOf",
+                "@type": "@id"
+            },
+            "samples": {
+                "@id": "Property:HasInput",
+                "@type": "@id"
+            },
+            "tasks": {
+                "@id": "Property:HasPart",
+                "@type": "@id"
+            },
+            "reference_processes": {
+                "@id": "Property:HasReferenceProcess",
+                "@type": "@id"
+            },
+            "receipt_date": "Property:HasReceiptDate",
+            "target_status": {
+                "@id": "Property:HasTargetStatus",
+                "@type": "@id"
+            },
+            "ghs_classification": {
+                "@id": "Property:HasGhsClassification",
+                "@type": "@id"
+            },
+            "additional_classification": {
+                "@id": "Property:HasSampleClassification",
+                "@type": "@id"
+            }
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWfa0d5710bc0f45819b61b65fc4fd9656?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "id": "root",
+    "uuid": "d29aa253-7f43-4fbe-87c7-4ded34ee34cb",
+    "title": "IscZaaKav",
+    "title*": {
+        "de": "ZAA Kleinauftrag",
+        "en": "ZAA Small Order"
+    },
+    "description": "Auftrags-Datenschema Kleinauftragsverwaltung",
+    "description*": {
+        "de": "Auftrags-Datenschema Kleinauftragsverwaltung"
+    },
+    "required": [
+        "type",
+        "creator",
+        "orderer",
+        "contact",
+        "cost_accounting",
+        "start_date_time",
+        "expenditure_of_time_in_h"
+    ],
+    "defaultProperties": [
+        "offer_number",
+        "keywords",
+        "actionees",
+        "end_date_time",
+        "status",
+        "samples",
+        "tasks"
+    ],
+    "options": {
+        "remove_empty_properties": true
+    },
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWd29aa2537f434fbe87c74ded34ee34cb"
+            ]
+        },
+        "orderer": {
+            "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472",
+            "minLength": 1
+        },
+        "project": {
+            "type": "string",
+            "format": "autocomplete",
+            "title": "Project",
+            "title*": {
+                "de": "Projekt"
+            },
+            "description": "Associated project",
+            "description*": {
+                "de": "Zugeordnetes Projekt"
+            },
+            "range": "Category:OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3"
+        },
+        "cost_accounting": {
+            "title": "SAP PSP Element",
+            "title*": {
+                "de": "SAP PSP-Element"
+            },
+            "description*": {
+                "de": "Zugeordnetes Projekt / PSP Element"
+            },
+            "type": "string",
+            "pattern": "^[0-9]{2}-[0-9]{5}-[0-9]{4}-[0-9]{5}$",
+            "options": {
+                "imask": {
+                    "returnUnmasked": false,
+                    "mask": "00-00000-0000-00000",
+                    "lazy": false
+                }
+            }
+        },
+        "start_date_time": {
+            "title*": {
+                "de": "Beauftragungszeitpunkt"
+            },
+            "description*": {
+                "de": "Zeitpunkt, zu dem der Auftrag begonnen wird"
+            }
+        },
+        "offer_number": {
+            "title": "Offer number",
+            "title*": {
+                "de": "Angebotsnummer"
+            },
+            "description*": {
+                "de": "Zugeordnetes Angebot"
+            },
+            "type": "string"
+        },
+        "expenditure_of_time_in_h": {
+            "title": "Expenditure of time",
+            "title*": {
+                "de": "Bearbeitungsdauer"
+            },
+            "description*": {
+                "de": "Geschätzter Zeitaufwand des Auftrags"
+            },
+            "type": "string",
+            "pattern": "^[0-9]*\\.[0-9]*$",
+            "options": {
+                "imask": {
+                    "returnUnmasked": true,
+                    "mask": "{0[00].0} h",
+                    "lazy": false
+                }
+            }
+        },
+        "actionees": {
+            "title*": {
+                "de": "Zu bearbeiten durch"
+            },
+            "description*": {
+                "de": "Vorschlag für Personen, die in die Bearbeitung übernehmen sollen"
+            }
+        },
+        "end_date_time": {
+            "title*": {
+                "de": "Geplante Fertigstellung"
+            },
+            "description*": {
+                "de": "Zeitpunkt, zu dem der Auftrag beendet wird"
+            }
+        },
+        "status": {
+            "description*": {
+                "de": "Kann auf Done gesetzt werden, sobald der Auftrag vollständig bearbeitet ist"
+            },
+            "$comment": "ToDo",
+            "default": "Item:OSWaa8d29404288446a9f3ec7afa4e2a512"
+        },
+        "workflow_runs": {
+            "type": "array",
+            "title": "Workflow Runs",
+            "description": "Workflows sheduled for this item",
+            "propertyOrder": 1010,
+            "default": [
+                {
+                    "tool": [
+                        "Item:OSWb030106896b1425ea5bf5e44aac7e49e"
+                    ]
+                }
+            ],
+            "eval_template": [
+                {
+                    "type": "mustache-wikitext",
+                    "mode": "render",
+                    "value": "{{#workflow_runs}} <div class='PrefectStatusBadge' data-config='{\"uuid\":\"{{{uuid}}}\", {{=<% %>=}} \"parent\": \"{{FULLPAGENAME}}\", \"parameters\": {\"request\": {\"model_titles\":  [\"{{FULLPAGENAME}}\"] <%={{ }}=%> } } }'></div> {{/workflow_runs}}"
+                }
+            ],
+            "items": {
+                "_$ref": "/wiki/Category:OSWb79812225c7849b78e98f2b3b10498b3?action=raw&slot=jsonschema",
+                "title": "Workflow Run",
+                "required": [
+                    "uuid",
+                    "tool"
+                ],
+                "properties": {
+                    "uuid": {
+                        "title": "UUID",
+                        "type": "string",
+                        "format": "uuid",
+                        "options": {
+                            "hidden": true
+                        }
+                    },
+                    "name": {
+                        "title": "Name",
+                        "description": "Technical / Machine compatible name",
+                        "description*": {
+                            "de": "Technischer / Maschinenkompatibler Name"
+                        },
+                        "type": "string",
+                        "options": {
+                            "hidden": true
+                        }
+                    },
+                    "label": {
+                        "type": "array",
+                        "title": "Labels",
+                        "title*": {
+                            "de": "Namen"
+                        },
+                        "description": "Human readable names. You have to assign at least one.",
+                        "description*": {
+                            "de": "Menschenlesbarer Namen. Du musst mindestens einen vergeben."
+                        },
+                        "format": "table",
+                        "eval_template": [
+                            {
+                                "type": "mustache-wikitext",
+                                "mode": "render",
+                                "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%={{ }}=%> {{#label}} |{{lang}}={{text}} {{/label}} {{=<% %>=}} }}"
+                            }
+                        ],
+                        "items": {
+                            "title": "Label",
+                            "title*": {
+                                "de": "Name"
+                            },
+                            "eval_template": [
+                                {
+                                    "type": "wikitext",
+                                    "mode": "store",
+                                    "value": "{{{text}}}@{{{lang}}}"
+                                }
+                            ],
+                            "$ref": "/wiki/JsonSchema:Label?action=raw"
+                        },
+                        "minItems": 1
+                    },
+                    "status": {
+                        "type": "string",
+                        "format": "autocomplete",
+                        "title": "Status",
+                        "default": "Item:OSWaa8d29404288446a9f3ec7afa4e2a512",
+                        "options": {
+                            "autocomplete": {
+                                "category": "Category:OSW9725d7a91bab4f1aa68f423e4e9bfcf4"
+                            }
+                        }
+                    },
+                    "tool": {
+                        "type": "array",
+                        "title": "Workflows",
+                        "title*": {
+                            "de": "Workflows"
+                        },
+                        "minItems": 1,
+                        "maxItems": 1,
+                        "items": {
+                            "type": "string",
+                            "title": "Workflow",
+                            "title*": {
+                                "de": "Workflow"
+                            },
+                            "format": "autocomplete",
+                            "options": {
+                                "autocomplete": {
+                                    "category": "Category:OSW22dc1c3790974a1bb7187d7a77f7e767"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "samples": {
+            "type": "array",
+            "format": "tabs",
+            "title": "Samples",
+            "title*": {
+                "de": "Proben"
+            },
+            "options": {
+                "enable_array_copy": true,
+                "array_copy_ignore": [
+                    "uuid",
+                    "id",
+                    "attachements"
+                ]
+            },
+            "items": {
+                "type": "object",
+                "format": "grid-strict",
+                "title": "Sample",
+                "title*": {
+                    "de": "Probe"
+                },
+                "headerTemplate": "{{ i1 }} - {{ self.id }}",
+                "required": [
+                    "uuid",
+                    "id",
+                    "name",
+                    "receipt_date"
+                ],
+                "properties": {
+                    "uuid": {
+                        "title": "UUID",
+                        "type": "string",
+                        "$comment": "format uuid field are copied, template fields are regenerated",
+                        "format": "uuid",
+                        "template": "dynamic_template",
+                        "_dynamic_template": "{{_uuid_}}",
+                        "options": {
+                            "hidden": true
+                        }
+                    },
+                    "id": {
+                        "title": "ID",
+                        "title*": {
+                            "de": "ID"
+                        },
+                        "description*": {
+                            "de": "Wird automatisch generiert"
+                        },
+                        "type": "string",
+                        "format": "dynamic_template",
+                        "dynamic_template": "P{{patternformat '00' _array_index_}}",
+                        "options": {
+                            "grid_columns": 6
+                        }
+                    },
+                    "name": {
+                        "title": "Name",
+                        "title*": {
+                            "de": "Name"
+                        },
+                        "type": "string",
+                        "options": {
+                            "grid_columns": 6
+                        }
+                    },
+                    "description": {
+                        "title": "Description",
+                        "title*": {
+                            "de": "Beschreibung"
+                        },
+                        "type": "array",
+                        "format": "table",
+                        "eval_template": {
+                            "type": "mustache-wikitext",
+                            "mode": "render",
+                            "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%={{ }}=%> {{#description}} |{{lang}}={{text}} {{/description}} {{=<% %>=}} }}"
+                        },
+                        "items": {
+                            "eval_template": [
+                                {
+                                    "type": "wikitext",
+                                    "mode": "store",
+                                    "value": "{{{text}}}@{{{lang}}}"
+                                }
+                            ],
+                            "$ref": "/wiki/JsonSchema:Description?action=raw"
+                        },
+                        "options": {
+                            "grid_columns": 12
+                        }
+                    },
+                    "receipt_date": {
+                        "title": "Receipt date",
+                        "title*": {
+                            "de": "Eingangsdatum"
+                        },
+                        "description*": {
+                            "de": "Zeitpunkt, an dem die Probe eingegangen ist"
+                        },
+                        "type": "string",
+                        "format": "date",
+                        "options": {
+                            "flatpicker": {},
+                            "grid_columns": 4
+                        }
+                    },
+                    "target_status": {
+                        "title": "After completion (target state)",
+                        "title*": {
+                            "de": "Nach Gebrauch (Zielzustand)"
+                        },
+                        "type": "array",
+                        "format": "choices",
+                        "items": {
+                            "type": "string",
+                            "_format": "autocomplete",
+                            "range": "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d",
+                            "enum": [
+                                "Item:OSW60bd050bf7c5459182fe638351d9cea7",
+                                "Item:OSWe44f5c0404d8422dbd3fafbc66687264",
+                                "Item:OSWfaa3d40356f64db0ae0852935ec9ccb6"
+                            ],
+                            "options": {
+                                "enum_titles": [
+                                    "Send back",
+                                    "Dispose",
+                                    "Store"
+                                ],
+                                "enum_titles*": {
+                                    "de": [
+                                        "Zurückschicken",
+                                        "Entsorgen",
+                                        "Lagern"
+                                    ]
+                                }
+                            }
+                        },
+                        "options": {
+                            "grid_columns": 8
+                        }
+                    },
+                    "ghs_classification": {
+                        "title": "Hazard classification",
+                        "title*": {
+                            "de": "Gefahrstoffklassifizierung"
+                        },
+                        "type": "array",
+                        "format": "choices",
+                        "items": {
+                            "title": "",
+                            "type": "string",
+                            "_format": "autocomplete",
+                            "range": "Category:OSWae1ec765ea47421695e9e8af5e212cb9",
+                            "enum": [
+                                "Item:OSWc9ccfe2e330d4ddcb33f02454fff6fcc",
+                                "Item:OSW052811fa2436493aa9ddc5f035542e21"
+                            ],
+                            "options": {
+                                "enum_titles": [
+                                    "GHS01: Explosive substance",
+                                    "GHS02: Flammable substance"
+                                ],
+                                "enum_titles*": {
+                                    "de": [
+                                        "GHS01: Explosiver Stoff",
+                                        "GHS02: Entzündlicher Stoff"
+                                    ]
+                                }
+                            }
+                        },
+                        "options": {
+                            "grid_columns": 6
+                        }
+                    },
+                    "additional_classification": {
+                        "title": "Sample properties",
+                        "title*": {
+                            "de": "Probeneigenschaft"
+                        },
+                        "type": "array",
+                        "format": "choices",
+                        "items": {
+                            "title": "",
+                            "type": "string",
+                            "_format": "autocomplete",
+                            "range": "Category:OSW9d4553ced7324cdc9088cdb786c339f8",
+                            "enum": [
+                                "Item:OSW645887b914d74ea2aae860f572932c73",
+                                "Item:OSW92db60f6a7e14865afc8ddb1394f5333"
+                            ],
+                            "options": {
+                                "enum_titles": [
+                                    "Temperature sensitive",
+                                    "Unknown composition"
+                                ],
+                                "enum_titles*": {
+                                    "de": [
+                                        "Temperaturempfindlich",
+                                        "Unbekannte Zusammensetzung"
+                                    ]
+                                }
+                            }
+                        },
+                        "options": {
+                            "grid_columns": 6
+                        }
+                    },
+                    "attachements": {
+                        "title": "File attachments",
+                        "title*": {
+                            "de": "Dateianhänge"
+                        },
+                        "type": "array",
+                        "items": {
+                            "title": "Attachment",
+                            "title*": {
+                                "de": "Anhang"
+                            },
+                            "type": "string",
+                            "format": "url",
+                            "options": {
+                                "upload": {}
+                            },
+                            "links": [
+                                {
+                                    "href": "{{#if self}}/w/index.php?title=Special:Redirect/file/{{self}}{{/if}}",
+                                    "rel": "{{#if self}}download{{/if}}",
+                                    "download": true
+                                }
+                            ]
+                        },
+                        "options": {
+                            "grid_columns": 12
+                        }
+                    }
+                }
+            }
+        },
+        "tasks": {
+            "type": "array",
+            "format": "tabs",
+            "title": "Tasks",
+            "title*": {
+                "de": "Aufgaben"
+            },
+            "options": {
+                "enable_array_copy": true
+            },
+            "items": {
+                "type": "object",
+                "format": "grid-strict",
+                "title": "Task",
+                "title*": {
+                    "de": "Aufgabe"
+                },
+                "headerTemplate": "{{ i1 }} - {{ self.name }}",
+                "required": [
+                    "uuid",
+                    "samples"
+                ],
+                "defaultProperties": [
+                    "name",
+                    "reference_processes",
+                    "end_date_time",
+                    "status",
+                    "actionees",
+                    "attachements"
+                ],
+                "properties": {
+                    "uuid": {
+                        "title": "UUID",
+                        "type": "string",
+                        "$comment": "format uuid field are copied, template fields are regenerated",
+                        "format": "uuid",
+                        "template": "dynamic_template",
+                        "_dynamic_template": "{{_uuid_}}",
+                        "options": {
+                            "hidden": true
+                        }
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "Name",
+                        "options": {
+                            "grid_columns": 12
+                        }
+                    },
+                    "reference_processes": {
+                        "type": "array",
+                        "title": "Reference Processes",
+                        "title*": {
+                            "de": "Referenzen / Vorlagen"
+                        },
+                        "items": {
+                            "type": "string",
+                            "title": "Reference",
+                            "title*": {
+                                "de": "Referenz"
+                            },
+                            "format": "autocomplete",
+                            "range": "Category:OSW2b2649b89d1e4ae4866c8cd18e1652e2"
+                        },
+                        "options": {
+                            "grid_columns": 12
+                        }
+                    },
+                    "end_date_time": {
+                        "type": "string",
+                        "title": "Due date",
+                        "title*": {
+                            "de": "Fällig"
+                        },
+                        "format": "date",
+                        "options": {
+                            "flatpicker": {},
+                            "grid_columns": 6
+                        }
+                    },
+                    "status": {
+                        "type": "string",
+                        "_format": "autocomplete",
+                        "format": "choices",
+                        "title": "Status",
+                        "range": "Category:OSW9725d7a91bab4f1aa68f423e4e9bfcf4",
+                        "enum": [
+                            "Item:OSWaa8d29404288446a9f3ec7afa4e2a512",
+                            "Item:OSWa2b4567ad4874ea1b9adfed19a3d06d1",
+                            "Item:OSWf474ec34b7df451ea8356134241aef8a"
+                        ],
+                        "options": {
+                            "enum_titles": [
+                                "To do",
+                                "In work",
+                                "Done"
+                            ],
+                            "enum_titles*": {
+                                "de": [
+                                    "Zu tun",
+                                    "In Arbeit",
+                                    "Erledigt"
+                                ]
+                            },
+                            "grid_columns": 6
+                        }
+                    },
+                    "actionees": {
+                        "type": "array",
+                        "title": "Actionees",
+                        "title*": {
+                            "de": "Akteure"
+                        },
+                        "items": {
+                            "type": "string",
+                            "title": "Actionee",
+                            "title*": {
+                                "de": "Akteur"
+                            },
+                            "format": "autocomplete",
+                            "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
+                        },
+                        "options": {
+                            "grid_columns": 12
+                        }
+                    },
+                    "samples": {
+                        "type": "array",
+                        "title": "Samples",
+                        "title*": {
+                            "de": "Proben"
+                        },
+                        "format": "table",
+                        "_format": "selectize",
+                        "items": {
+                            "type": "string",
+                            "title": "Sample",
+                            "title*": {
+                                "de": "Probe"
+                            },
+                            "watch": {
+                                "available_samples": "root.samples"
+                            },
+                            "eval_template": [
+                                {
+                                    "type": "mustache-wikitext",
+                                    "value": "{{=<% %>=}} {{FULLPAGENAME}}#<%={{ }}=%>{{.}}"
+                                }
+                            ],
+                            "enumSource": [
+                                {
+                                    "source": "available_samples",
+                                    "value": "OSW{{#replace '-' ''}}{{item.uuid}}{{/replace}}",
+                                    "title": "{{item.id}} - {{item.name}}"
+                                }
+                            ]
+                        },
+                        "options": {
+                            "grid_columns": 12
+                        }
+                    },
+                    "description": {
+                        "title": "Description",
+                        "title*": {
+                            "de": "Beschreibung"
+                        },
+                        "type": "array",
+                        "format": "table",
+                        "eval_template": {
+                            "type": "mustache-wikitext",
+                            "mode": "render",
+                            "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%={{ }}=%> {{#description}} |{{lang}}={{text}} {{/description}} {{=<% %>=}} }}"
+                        },
+                        "items": {
+                            "eval_template": [
+                                {
+                                    "type": "wikitext",
+                                    "mode": "store",
+                                    "value": "{{{text}}}@{{{lang}}}"
+                                }
+                            ],
+                            "$ref": "/wiki/JsonSchema:Description?action=raw"
+                        },
+                        "options": {
+                            "grid_columns": 12
+                        }
+                    },
+                    "attachements": {
+                        "title": "File attachments",
+                        "title*": {
+                            "de": "Dateianhänge"
+                        },
+                        "type": "array",
+                        "items": {
+                            "title": "Attachment",
+                            "title*": {
+                                "de": "Anhang"
+                            },
+                            "type": "string",
+                            "format": "url",
+                            "options": {
+                                "upload": {}
+                            },
+                            "links": [
+                                {
+                                    "href": "{{#if self}}/w/index.php?title=Special:Redirect/file/{{self}}{{/if}}",
+                                    "rel": "{{#if self}}download{{/if}}",
+                                    "download": true
+                                }
+                            ]
+                        },
+                        "options": {
+                            "grid_columns": 12
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

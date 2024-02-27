@@ -1,0 +1,27 @@
+{
+    "type": [
+        "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d"
+    ],
+    "uuid": "e44f5c04-04d8-422d-bd3f-afbc66687264",
+    "label": [
+        {
+            "text": "Dispose",
+            "lang": "en"
+        },
+        {
+            "text": "Entsorgen",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "The object / sample should be disposed after completing the task",
+            "lang": "en"
+        },
+        {
+            "text": "Das Objekt / die Probe soll nach Abschluss des Auftrags entsorgt werden",
+            "lang": "de"
+        }
+    ],
+    "name": "Dispose"
+}

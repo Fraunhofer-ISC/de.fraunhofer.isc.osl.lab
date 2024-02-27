@@ -1,0 +1,25 @@
+{
+    "type": [
+        "Category:OSW11a53cdfbdc24524bf8ac435cbf65d9d"
+    ],
+    "uuid": "689bd7a4-e4e3-4068-844b-1463ec0c9721",
+    "label": [
+        {
+            "text": "Flammable.svg",
+            "lang": "en"
+        }
+    ],
+    "editor": [
+        "User:Simon Stier"
+    ],
+    "editing_context": [
+        "Item:OSW052811fa2436493aa9ddc5f035542e21"
+    ],
+    "creator": [
+        "User:Simon Stier"
+    ],
+    "creation_context": [
+        "Item:OSW052811fa2436493aa9ddc5f035542e21"
+    ],
+    "name": "FlammableSvg"
+}

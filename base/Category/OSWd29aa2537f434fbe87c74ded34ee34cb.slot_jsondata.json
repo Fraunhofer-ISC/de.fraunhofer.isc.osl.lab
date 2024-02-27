@@ -1,0 +1,29 @@
+{
+    "subclass_of": [
+        "Category:OSWfa0d5710bc0f45819b61b65fc4fd9656"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "d29aa253-7f43-4fbe-87c7-4ded34ee34cb",
+    "label": [
+        {
+            "text": "ZAA Kleinauftrag",
+            "lang": "de"
+        },
+        {
+            "text": "ZAA Small Order",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "Auftrags-Datenschema Kleinauftragsverwaltung",
+            "lang": "de"
+        }
+    ],
+    "name": "ZaaKleinauftrag",
+    "utf8_icon": [
+        "🛒"
+    ]
+}

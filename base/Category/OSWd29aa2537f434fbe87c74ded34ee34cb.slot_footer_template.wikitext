@@ -1,0 +1,35 @@
+{{#if: {{{lab|}}}|Lab: {{{lab|}}}|<div class="pagebot-button" data-config='{
+    "label": "{{#switch: {{USERLANGUAGECODE}}
+       |de=Labor zuweisen
+       |#default=Assign lab
+    }}",
+    "action": "edit-data",
+    "params": {"categories": ["Category:OSW89d01b6ec9e9412aa6fadf244f59cc78"]}
+}'></div>}}
+
+== Proben ==
+{{#ask: [[-HasInput::{{FULLPAGENAME}}]]
+|?HasId=ID
+|?HasName=Name
+|?HasReceiptDate#LOCL@TO#-F[d.M.Y]=Eingangsdatum
+|?HasDescription=Beschreibung
+|?HasTargetStatus=Nach Verwendung
+|?HasFileAttachment=Anhang
+|?HasGhsClassification.HasImage#75px=Gefährdungen
+|?HasSampleClassification=Eigenschaften
+|sort=HasId
+|format=table
+}}
+
+== Aufgaben ==
+<!--<div class="pagebot-button" data-config='{ "params": {"categories": ["Category:Item"], "jsondata": {"label": [{"text": "test", "lang": "en"}]}} }'></div>-->
+{{#ask:[[-HasPart::{{FULLPAGENAME}}]]
+|?Display title of=Name
+|?HasInput=Auftrag/Proben
+|?HasDescription=Beschreibung
+|?HasReferenceProcess=Vorlage
+|?HasStatus=Status
+|?Due date#LOCL@TO#-F[d.M.Y]=Fällig
+<!--|sort=Due date-->
+|format=table
+}}

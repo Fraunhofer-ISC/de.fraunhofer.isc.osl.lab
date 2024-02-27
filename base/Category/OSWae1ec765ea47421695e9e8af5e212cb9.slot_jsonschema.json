@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "/wiki/Category:OSWd02741381aaa4709ae0753a0edc341ce?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWd02741381aaa4709ae0753a0edc341ce?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "ae1ec765-ea47-4216-95e9-e8af5e212cb9",
+    "title": "HazardClassification",
+    "title*": {
+        "en": "Hazard Classification",
+        "de": "Gefahrstoff-Klassifizierung"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWae1ec765ea47421695e9e8af5e212cb9"
+            ]
+        }
+    }
+}

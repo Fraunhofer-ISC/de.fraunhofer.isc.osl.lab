@@ -1,0 +1,30 @@
+{
+    "@context": [
+        "/wiki/Category:OSW2c32802be59040248c85eda3479d484c?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW2c32802be59040248c85eda3479d484c?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "bd354f0c-bc7c-41d3-8ee3-01be9bb3ce8d",
+    "title": "ObjectStatus",
+    "title*": {
+        "en": "Object Status"
+    },
+    "description": "State of an object ",
+    "description*": {
+        "en": "State of an object "
+    },
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d"
+            ]
+        }
+    }
+}

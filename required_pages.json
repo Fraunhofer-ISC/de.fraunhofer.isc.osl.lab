@@ -1,0 +1,178 @@
+{
+    "list": [
+        "Category:Category",
+        "Category:OSW22dc1c3790974a1bb7187d7a77f7e767",
+        "Category:OSW2b2649b89d1e4ae4866c8cd18e1652e2",
+        "Category:OSW2c32802be59040248c85eda3479d484c",
+        "Category:OSW3a86b2496454417296ad2cd784194da6",
+        "Category:OSW3cb8cef2225e403092f098f99bc4c472",
+        "Category:OSW44deaa5b806d41a2a88594f562b110e9",
+        "Category:OSW89d01b6ec9e9412aa6fadf244f59cc78",
+        "Category:OSW9725d7a91bab4f1aa68f423e4e9bfcf4",
+        "Category:OSW9d4553ced7324cdc9088cdb786c339f8",
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9",
+        "Category:OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3",
+        "Category:OSWb79812225c7849b78e98f2b3b10498b3",
+        "Category:OSWb8b6278763d54b0784eea9d3b3d183a4",
+        "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d",
+        "Category:OSWd02741381aaa4709ae0753a0edc341ce",
+        "Category:OSWd29aa2537f434fbe87c74ded34ee34cb",
+        "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203",
+        "Category:OSWfa0d5710bc0f45819b61b65fc4fd9656",
+        "File:OSW5a292d489f63435db2dbd2208156e34c.svg",
+        "File:OSW689bd7a4e4e34068844b1463ec0c9721.svg",
+        "Item:OSW052811fa2436493aa9ddc5f035542e21",
+        "Item:OSW40765ed6644d5aecb27f81d257e091b5",
+        "Item:OSW60bd050bf7c5459182fe638351d9cea7",
+        "Item:OSW645887b914d74ea2aae860f572932c73",
+        "Item:OSW92db60f6a7e14865afc8ddb1394f5333",
+        "Item:OSWa2b4567ad4874ea1b9adfed19a3d06d1",
+        "Item:OSWaa8d29404288446a9f3ec7afa4e2a512",
+        "Item:OSWb030106896b1425ea5bf5e44aac7e49e",
+        "Item:OSWc9ccfe2e330d4ddcb33f02454fff6fcc",
+        "Item:OSWe44f5c0404d8422dbd3fafbc66687264",
+        "Item:OSWf474ec34b7df451ea8356134241aef8a",
+        "Item:OSWfaa3d40356f64db0ae0852935ec9ccb6",
+        "JsonSchema:Description",
+        "JsonSchema:Label",
+        "Property:HasAbbreviation",
+        "Property:HasSuperordinateOu"
+    ],
+    "dict": {
+        "Category:OSWd29aa2537f434fbe87c74ded34ee34cb": {
+            "jsondata": [
+                "Category:Category",
+                "Category:OSWfa0d5710bc0f45819b61b65fc4fd9656"
+            ],
+            "jsonschema": [
+                "Category:OSW22dc1c3790974a1bb7187d7a77f7e767",
+                "Category:OSW2b2649b89d1e4ae4866c8cd18e1652e2",
+                "Category:OSW3cb8cef2225e403092f098f99bc4c472",
+                "Category:OSW44deaa5b806d41a2a88594f562b110e9",
+                "Category:OSW9725d7a91bab4f1aa68f423e4e9bfcf4",
+                "Category:OSW9d4553ced7324cdc9088cdb786c339f8",
+                "Category:OSWae1ec765ea47421695e9e8af5e212cb9",
+                "Category:OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3",
+                "Category:OSWb79812225c7849b78e98f2b3b10498b3",
+                "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d",
+                "Category:OSWd29aa2537f434fbe87c74ded34ee34cb",
+                "Category:OSWfa0d5710bc0f45819b61b65fc4fd9656",
+                "Item:OSW052811fa2436493aa9ddc5f035542e21",
+                "Item:OSW60bd050bf7c5459182fe638351d9cea7",
+                "Item:OSW645887b914d74ea2aae860f572932c73",
+                "Item:OSW92db60f6a7e14865afc8ddb1394f5333",
+                "Item:OSWa2b4567ad4874ea1b9adfed19a3d06d1",
+                "Item:OSWaa8d29404288446a9f3ec7afa4e2a512",
+                "Item:OSWb030106896b1425ea5bf5e44aac7e49e",
+                "Item:OSWc9ccfe2e330d4ddcb33f02454fff6fcc",
+                "Item:OSWe44f5c0404d8422dbd3fafbc66687264",
+                "Item:OSWf474ec34b7df451ea8356134241aef8a",
+                "Item:OSWfaa3d40356f64db0ae0852935ec9ccb6",
+                "JsonSchema:Description",
+                "JsonSchema:Label"
+            ]
+        },
+        "Category:OSW3a86b2496454417296ad2cd784194da6": {
+            "jsondata": [
+                "Category:Category",
+                "Category:OSWd29aa2537f434fbe87c74ded34ee34cb"
+            ],
+            "jsonschema": [
+                "Category:OSW3a86b2496454417296ad2cd784194da6",
+                "Category:OSWd29aa2537f434fbe87c74ded34ee34cb"
+            ]
+        },
+        "Category:OSW89d01b6ec9e9412aa6fadf244f59cc78": {
+            "jsondata": [
+                "Category:Category",
+                "Category:OSWd29aa2537f434fbe87c74ded34ee34cb"
+            ],
+            "jsonschema": [
+                "Category:OSW89d01b6ec9e9412aa6fadf244f59cc78",
+                "Category:OSWb8b6278763d54b0784eea9d3b3d183a4",
+                "Category:OSWd29aa2537f434fbe87c74ded34ee34cb",
+                "Item:OSW40765ed6644d5aecb27f81d257e091b5",
+                "Property:HasAbbreviation",
+                "Property:HasSuperordinateOu"
+            ]
+        },
+        "Category:OSW2b2649b89d1e4ae4866c8cd18e1652e2": {
+            "jsondata": [
+                "Category:Category",
+                "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203"
+            ],
+            "jsonschema": [
+                "Category:OSW2b2649b89d1e4ae4866c8cd18e1652e2",
+                "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203",
+                "JsonSchema:Description"
+            ]
+        },
+        "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d": {
+            "jsondata": [
+                "Category:Category",
+                "Category:OSW2c32802be59040248c85eda3479d484c"
+            ],
+            "jsonschema": [
+                "Category:OSW2c32802be59040248c85eda3479d484c",
+                "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d"
+            ]
+        },
+        "Item:OSWfaa3d40356f64db0ae0852935ec9ccb6": {
+            "jsondata": [
+                "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d"
+            ]
+        },
+        "Item:OSW60bd050bf7c5459182fe638351d9cea7": {
+            "jsondata": [
+                "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d"
+            ]
+        },
+        "Item:OSWe44f5c0404d8422dbd3fafbc66687264": {
+            "jsondata": [
+                "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d"
+            ]
+        },
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9": {
+            "jsondata": [
+                "Category:Category",
+                "Category:OSWd02741381aaa4709ae0753a0edc341ce"
+            ],
+            "jsonschema": [
+                "Category:OSWae1ec765ea47421695e9e8af5e212cb9",
+                "Category:OSWd02741381aaa4709ae0753a0edc341ce"
+            ]
+        },
+        "Item:OSWc9ccfe2e330d4ddcb33f02454fff6fcc": {
+            "jsondata": [
+                "Category:OSWae1ec765ea47421695e9e8af5e212cb9",
+                "File:OSW5a292d489f63435db2dbd2208156e34c.svg"
+            ]
+        },
+        "Item:OSW052811fa2436493aa9ddc5f035542e21": {
+            "jsondata": [
+                "Category:OSWae1ec765ea47421695e9e8af5e212cb9",
+                "File:OSW689bd7a4e4e34068844b1463ec0c9721.svg"
+            ]
+        },
+        "Category:OSW9d4553ced7324cdc9088cdb786c339f8": {
+            "jsondata": [
+                "Category:Category",
+                "Category:OSWd02741381aaa4709ae0753a0edc341ce"
+            ],
+            "jsonschema": [
+                "Category:OSW9d4553ced7324cdc9088cdb786c339f8",
+                "Category:OSWd02741381aaa4709ae0753a0edc341ce"
+            ]
+        },
+        "Item:OSW645887b914d74ea2aae860f572932c73": {
+            "jsondata": [
+                "Category:OSW9d4553ced7324cdc9088cdb786c339f8"
+            ]
+        },
+        "Item:OSW92db60f6a7e14865afc8ddb1394f5333": {
+            "jsondata": [
+                "Category:OSW9d4553ced7324cdc9088cdb786c339f8"
+            ]
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "@context": [
+        "/wiki/Category:OSWd29aa2537f434fbe87c74ded34ee34cb?action=raw&slot=jsonschema",
+        {
+            "id": "Property:HasId"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWd29aa2537f434fbe87c74ded34ee34cb?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "89d01b6e-c9e9-412a-a6fa-df244f59cc78",
+    "title": "ZaaKleinauftragZugewiesen",
+    "title*": {
+        "de": "ZAA Kleinauftrag (zugewiesen)",
+        "en": "ZAA Small Order (assigned)"
+    },
+    "description": "Laborauftrag der einem Labor zugewiesen wurde",
+    "description*": {
+        "de": "Laborauftrag der einem Labor zugewiesen wurde"
+    },
+    "required": [
+        "type",
+        "id",
+        "lab",
+        "lab_abbreviation"
+    ],
+    "defaultProperties": [],
+    "options": {
+        "remove_empty_properties": true
+    },
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW89d01b6ec9e9412aa6fadf244f59cc78"
+            ]
+        },
+        "id": {
+            "title": "ID",
+            "title*": {
+                "de": "ID"
+            },
+            "description*": {
+                "de": "Wird automatisch generiert"
+            },
+            "type": "string",
+            "watch": {
+                "lab_abbreviation": "root.lab_abbreviation"
+            },
+            "format": "dynamic_template",
+            "readonly": true,
+            "dynamic_template": "{{{lab_abbreviation}}}{{{dateformat 'Y' (_now_)}}}-{{{_global_index_}}}",
+            "propertyOrder": -10,
+            "options": {
+                "grid_columns": 6
+            }
+        },
+        "lab": {
+            "title": "Lab",
+            "title*": {
+                "de": "Labor"
+            },
+            "type": "string",
+            "format": "autocomplete",
+            "$comment": "range: Group, but query subgroups of ZAA",
+            "_range": "Category:OSWb8b6278763d54b0784eea9d3b3d183a4",
+            "propertyOrder": -9,
+            "options": {
+                "autocomplete": {
+                    "query": "[[HasSuperordinateOu::Item:OSW40765ed6644d5aecb27f81d257e091b5]]|?HasAbbreviation=abbreviation",
+                    "field_maps": [
+                        {
+                            "source_path": "$",
+                            "template": "{{{result.printouts.abbreviation.[0]}}}",
+                            "target_path": "root.lab_abbreviation"
+                        }
+                    ]
+                }
+            }
+        },
+        "lab_abbreviation": {
+            "title": "Lab Abbreviation",
+            "title*": {
+                "de": "Laborkürzel"
+            },
+            "type": "string",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}

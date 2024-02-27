@@ -1,0 +1,27 @@
+{
+    "type": [
+        "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d"
+    ],
+    "uuid": "60bd050b-f7c5-4591-82fe-638351d9cea7",
+    "label": [
+        {
+            "text": "Send back",
+            "lang": "en"
+        },
+        {
+            "text": "Zurückschicken",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "The object / sample should be returned to the sender after completing the task",
+            "lang": "en"
+        },
+        {
+            "text": "Das Objekt / die Probe soll nach Abschluss des Auftrags an den Sender zurückgesendet werden",
+            "lang": "de"
+        }
+    ],
+    "name": "SendBack"
+}

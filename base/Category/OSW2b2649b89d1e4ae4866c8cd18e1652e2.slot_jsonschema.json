@@ -1,0 +1,58 @@
+{
+    "@context": [
+        "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema",
+        {
+            "description_template": "Property:HasDescriptionTemplate"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "2b2649b8-9d1e-4ae4-866c-8cd18e1652e2",
+    "title": "AnalytikAufgabe",
+    "title*": {
+        "de": "Analytik Aufgabe",
+        "en": "Analytics task"
+    },
+    "description": "Procedure description for analytical tests in laboratory orders",
+    "description*": {
+        "de": "Verfahrensbeschreibung für analytische Untersuchungen in Laboraufträgen",
+        "en": "Procedure description for analytical tests in laboratory orders"
+    },
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW2b2649b89d1e4ae4866c8cd18e1652e2"
+            ]
+        },
+        "description_template": {
+            "title": "Description template",
+            "title*": {
+                "de": "Beschreibungsvorlage"
+            },
+            "type": "array",
+            "format": "table",
+            "eval_template": {
+                "type": "mustache-wikitext",
+                "mode": "render",
+                "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%={{ }}=%> {{#description}} |{{lang}}={{text}} {{/description}} {{=<% %>=}} }}"
+            },
+            "items": {
+                "eval_template": [
+                    {
+                        "type": "wikitext",
+                        "mode": "store",
+                        "value": "{{{text}}}@{{{lang}}}"
+                    }
+                ],
+                "$ref": "/wiki/JsonSchema:Description?action=raw"
+            }
+        }
+    }
+}

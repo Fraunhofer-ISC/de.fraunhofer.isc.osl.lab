@@ -1,0 +1,30 @@
+{
+    "subclass_of": [
+        "Category:OSWd02741381aaa4709ae0753a0edc341ce"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "9d4553ce-d732-4cdc-9088-cdb786c339f8",
+    "label": [
+        {
+            "text": "Substance classification",
+            "lang": "en"
+        },
+        {
+            "text": "Substanz-Klassifizierung",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Additional chemical, physical or biological characteristics of a substance / sample",
+            "lang": "en"
+        },
+        {
+            "text": "Zusätzliche chemische, physikalische oder biologische Merkmale einer Substanz / Probe",
+            "lang": "de"
+        }
+    ],
+    "name": "SubstanceClassification"
+}

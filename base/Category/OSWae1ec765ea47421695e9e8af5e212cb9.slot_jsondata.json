@@ -1,0 +1,20 @@
+{
+    "subclass_of": [
+        "Category:OSWd02741381aaa4709ae0753a0edc341ce"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "ae1ec765-ea47-4216-95e9-e8af5e212cb9",
+    "label": [
+        {
+            "text": "Hazard Classification",
+            "lang": "en"
+        },
+        {
+            "text": "Gefahrstoff-Klassifizierung",
+            "lang": "de"
+        }
+    ],
+    "name": "HazardClassification"
+}

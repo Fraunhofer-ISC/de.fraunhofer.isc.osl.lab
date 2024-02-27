@@ -1,0 +1,30 @@
+{
+    "subclass_of": [
+        "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "2b2649b8-9d1e-4ae4-866c-8cd18e1652e2",
+    "label": [
+        {
+            "text": "Analytics task",
+            "lang": "en"
+        },
+        {
+            "text": "Analytik Aufgabe",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Procedure description for analytical tests in laboratory orders",
+            "lang": "en"
+        },
+        {
+            "text": "Verfahrensbeschreibung für analytische Untersuchungen in Laboraufträgen",
+            "lang": "de"
+        }
+    ],
+    "name": "AnalyticsTask"
+}

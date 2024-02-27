@@ -1,0 +1,34 @@
+{
+    "type": [
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9"
+    ],
+    "uuid": "052811fa-2436-493a-a9dd-c5f035542e21",
+    "label": [
+        {
+            "text": "GHS02: Flammable substance",
+            "lang": "en"
+        },
+        {
+            "text": "GHS02: Entzündlicher Stoff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Substances and formulations are considered flammable or ignitable if they have a low flash point. See also https://www.wikidata.org/wiki/Q51791331; https://www.wikidata.org/wiki/Q2755640",
+            "lang": "en"
+        },
+        {
+            "text": "Als entzündlich oder entzündbar gelten Stoffe und Zubereitungen, wenn sie einen niedrigen Flammpunkt haben.",
+            "lang": "de"
+        }
+    ],
+    "short_name": [
+        {
+            "text": "GHS02",
+            "lang": "en"
+        }
+    ],
+    "name": "Ghs02FlammableSubstance",
+    "image": "File:OSW689bd7a4e4e34068844b1463ec0c9721.svg"
+}

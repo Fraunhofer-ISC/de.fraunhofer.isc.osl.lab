@@ -1,0 +1,27 @@
+{
+    "type": [
+        "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d"
+    ],
+    "uuid": "faa3d403-56f6-4db0-ae08-52935ec9ccb6",
+    "label": [
+        {
+            "text": "Store",
+            "lang": "en"
+        },
+        {
+            "text": "Lagern",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "The object / sample should be kept stored after completing the task",
+            "lang": "en"
+        },
+        {
+            "text": "Das Objekt / die Probe soll nach Abschluss des Auftrags eingelagert werden",
+            "lang": "de"
+        }
+    ],
+    "name": "Store"
+}
