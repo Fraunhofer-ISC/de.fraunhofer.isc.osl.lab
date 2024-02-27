@@ -7,11 +7,11 @@
     "language": "en",
     "licenseName": "CC BY-NC 4.0",
     "packages": {
-        "ISC Base": {
+        "ISC Lab": {
             "globalID": "de.fraunhofer.isc.osl.lab",
-            "label": "ISC Base",
+            "label": "ISC Lab",
             "description": "Extends the OpenSemanticWorld Package 'world.opensemantic.lab' with concepts and pages that are specific to the Fraunhofer ISC.",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "requiredPackages": [
                 "world.opensemantic.lab"
             ],
