@@ -1,0 +1,34 @@
+{
+    "type": [
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9"
+    ],
+    "uuid": "f4551e8c-9cb4-461b-b64e-ec3fc923dfe9",
+    "label": [
+        {
+            "text": "GHS06: Poisonous substance",
+            "lang": "en"
+        },
+        {
+            "text": "GHS06: Giftiger Stoff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Substance that causes damage to living organisms via their metabolic processes",
+            "lang": "en"
+        },
+        {
+            "text": "Stoff, der Lebewesen über ihre Stoffwechselvorgänge Schaden zufügt",
+            "lang": "de"
+        }
+    ],
+    "short_name": [
+        {
+            "text": "GHS06",
+            "lang": "en"
+        }
+    ],
+    "name": "Ghs06PoisonousSubstance",
+    "image": "File:OSW0505946b683449fbaa5f35b1052e1973.svg"
+}

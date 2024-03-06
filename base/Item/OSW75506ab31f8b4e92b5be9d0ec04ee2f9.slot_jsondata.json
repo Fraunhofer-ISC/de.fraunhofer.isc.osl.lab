@@ -1,0 +1,34 @@
+{
+    "type": [
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9"
+    ],
+    "uuid": "75506ab3-1f8b-4e92-b5be-9d0ec04ee2f9",
+    "label": [
+        {
+            "text": "GHS04: Pressurized substance",
+            "lang": "en"
+        },
+        {
+            "text": "GHS04: Unter Druck stehender Stoff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Pressurized gases",
+            "lang": "en"
+        },
+        {
+            "text": "Unter Druck stehende Gase",
+            "lang": "de"
+        }
+    ],
+    "short_name": [
+        {
+            "text": "GHS04",
+            "lang": "en"
+        }
+    ],
+    "name": "Ghs04PressurizedSubstance",
+    "image": "File:OSW2cc26e933c054c058d4e42b7e085af56.svg"
+}

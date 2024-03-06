@@ -1,0 +1,34 @@
+{
+    "type": [
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9"
+    ],
+    "uuid": "f9c34ccc-be9c-4721-93d0-a82c78a2eecc",
+    "label": [
+        {
+            "text": "GHS08: Health hazardous substances",
+            "lang": "en"
+        },
+        {
+            "text": "GHS08: Gesundheitsgefährdender Stoff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Substances or mixtures which may cause alteration of genetic material by inhalation, ingestion or absorption through the skin",
+            "lang": "en"
+        },
+        {
+            "text": "Stoffe oder Gemische, die durch Einatmen, Verschlucken oder Aufnahme über die Haut eine Änderung des genetischen Materials bewirken können",
+            "lang": "de"
+        }
+    ],
+    "short_name": [
+        {
+            "text": "GHS08",
+            "lang": "en"
+        }
+    ],
+    "name": "Ghs08HealthHazardousSubstances",
+    "image": "File:OSW8b6e34f11f164ba98d4e7620f5feace3.svg"
+}

@@ -1,0 +1,34 @@
+{
+    "type": [
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9"
+    ],
+    "uuid": "339886c2-284b-4f7a-8fa7-69ddea93ebc2",
+    "label": [
+        {
+            "text": "GHS03: Oxidizing substance",
+            "lang": "en"
+        },
+        {
+            "text": "GHS03: Oxidierender Stoff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Flammable oxidizing substance",
+            "lang": "en"
+        },
+        {
+            "text": "Entzündend oxidierend wirkender Stoff",
+            "lang": "de"
+        }
+    ],
+    "short_name": [
+        {
+            "text": "GHS03",
+            "lang": "en"
+        }
+    ],
+    "name": "Ghs03OxidizingSubstance",
+    "image": "File:OSW49ceae5d534b434aace5604cd23a2076.svg"
+}

@@ -1,0 +1,34 @@
+{
+    "type": [
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9"
+    ],
+    "uuid": "9bec9fe8-dc68-41ee-b155-2e39704a660a",
+    "label": [
+        {
+            "text": "GHS07: Irritant substance",
+            "lang": "en"
+        },
+        {
+            "text": "GHS07: Reizender Stoff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Skin irritant, eye irritant",
+            "lang": "en"
+        },
+        {
+            "text": "hautreizend, augenreizend",
+            "lang": "de"
+        }
+    ],
+    "short_name": [
+        {
+            "text": "GHS07",
+            "lang": "en"
+        }
+    ],
+    "name": "Ghs07IrritantSubstance",
+    "image": "File:OSW0b3adec8507145fd8653afe1019f07b2.svg"
+}

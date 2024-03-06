@@ -2,7 +2,8 @@
     "publisher": "Fraunhofer-ISC",
     "publisherURL": "https://github.com/Fraunhofer-ISC/de.fraunhofer.isc.osl.lab",
     "author": [
-        "Simon Stier"
+        "Simon Stier",
+        "Lukas Scheuplein"
     ],
     "language": "en",
     "licenseName": "CC BY-NC 4.0",
@@ -11,7 +12,7 @@
             "globalID": "de.fraunhofer.isc.osl.lab",
             "label": "ISC Lab",
             "description": "Extends the OpenSemanticWorld Package 'world.opensemantic.lab' with concepts and pages that are specific to the Fraunhofer ISC.",
-            "version": "0.1.1",
+            "version": "0.2.0",
             "requiredPackages": [
                 "world.opensemantic.lab"
             ],
@@ -262,6 +263,251 @@
                     }
                 },
                 {
+                    "name": "OSW339886c2284b4f7a8fa769ddea93ebc2",
+                    "label": "Ghs03OxidizingSubstance",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW339886c2284b4f7a8fa769ddea93ebc2.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW339886c2284b4f7a8fa769ddea93ebc2.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW339886c2284b4f7a8fa769ddea93ebc2.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW339886c2284b4f7a8fa769ddea93ebc2.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW49ceae5d534b434aace5604cd23a2076.svg",
+                    "label": "OxidizerSvg",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW49ceae5d534b434aace5604cd23a2076.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSW49ceae5d534b434aace5604cd23a2076.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSW49ceae5d534b434aace5604cd23a2076.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSW49ceae5d534b434aace5604cd23a2076.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSW49ceae5d534b434aace5604cd23a2076.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW75506ab31f8b4e92b5be9d0ec04ee2f9",
+                    "label": "Ghs04PressurizedSubstance",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW75506ab31f8b4e92b5be9d0ec04ee2f9.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW75506ab31f8b4e92b5be9d0ec04ee2f9.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW75506ab31f8b4e92b5be9d0ec04ee2f9.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW75506ab31f8b4e92b5be9d0ec04ee2f9.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW2cc26e933c054c058d4e42b7e085af56.svg",
+                    "label": "CompressedGasSvg",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW2cc26e933c054c058d4e42b7e085af56.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSW2cc26e933c054c058d4e42b7e085af56.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSW2cc26e933c054c058d4e42b7e085af56.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSW2cc26e933c054c058d4e42b7e085af56.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSW2cc26e933c054c058d4e42b7e085af56.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW7d0c0b54f1fe4598862c536da6c18d11",
+                    "label": "Ghs05CorrosiveSubstance",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW7d0c0b54f1fe4598862c536da6c18d11.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW7d0c0b54f1fe4598862c536da6c18d11.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW7d0c0b54f1fe4598862c536da6c18d11.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW7d0c0b54f1fe4598862c536da6c18d11.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW8707a0019fe54a68895cab63c0051c28.svg",
+                    "label": "CorrosiveSvg",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW8707a0019fe54a68895cab63c0051c28.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSW8707a0019fe54a68895cab63c0051c28.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSW8707a0019fe54a68895cab63c0051c28.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSW8707a0019fe54a68895cab63c0051c28.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSW8707a0019fe54a68895cab63c0051c28.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWf4551e8c9cb4461bb64eec3fc923dfe9",
+                    "label": "Ghs06PoisonousSubstance",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWf4551e8c9cb4461bb64eec3fc923dfe9.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWf4551e8c9cb4461bb64eec3fc923dfe9.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWf4551e8c9cb4461bb64eec3fc923dfe9.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWf4551e8c9cb4461bb64eec3fc923dfe9.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW0505946b683449fbaa5f35b1052e1973.svg",
+                    "label": "AcuteToxicSvg",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW0505946b683449fbaa5f35b1052e1973.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSW0505946b683449fbaa5f35b1052e1973.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSW0505946b683449fbaa5f35b1052e1973.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSW0505946b683449fbaa5f35b1052e1973.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSW0505946b683449fbaa5f35b1052e1973.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW9bec9fe8dc6841eeb1552e39704a660a",
+                    "label": "Ghs07IrritantSubstance",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW9bec9fe8dc6841eeb1552e39704a660a.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW9bec9fe8dc6841eeb1552e39704a660a.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW9bec9fe8dc6841eeb1552e39704a660a.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW9bec9fe8dc6841eeb1552e39704a660a.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW0b3adec8507145fd8653afe1019f07b2.svg",
+                    "label": "IrritantSvg",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW0b3adec8507145fd8653afe1019f07b2.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSW0b3adec8507145fd8653afe1019f07b2.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSW0b3adec8507145fd8653afe1019f07b2.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSW0b3adec8507145fd8653afe1019f07b2.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSW0b3adec8507145fd8653afe1019f07b2.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWf9c34cccbe9c472193d0a82c78a2eecc",
+                    "label": "Ghs08HealthHazardousSubstances",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWf9c34cccbe9c472193d0a82c78a2eecc.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWf9c34cccbe9c472193d0a82c78a2eecc.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWf9c34cccbe9c472193d0a82c78a2eecc.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWf9c34cccbe9c472193d0a82c78a2eecc.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW8b6e34f11f164ba98d4e7620f5feace3.svg",
+                    "label": "HealthHazardSvg",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW8b6e34f11f164ba98d4e7620f5feace3.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSW8b6e34f11f164ba98d4e7620f5feace3.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSW8b6e34f11f164ba98d4e7620f5feace3.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSW8b6e34f11f164ba98d4e7620f5feace3.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSW8b6e34f11f164ba98d4e7620f5feace3.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWad455fb51036469796892aebb78de4b0",
+                    "label": "Ghs09EnvironmentallyHazardousSubstances",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWad455fb51036469796892aebb78de4b0.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWad455fb51036469796892aebb78de4b0.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWad455fb51036469796892aebb78de4b0.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWad455fb51036469796892aebb78de4b0.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW8ff9d12bdca84a088bb0f475b003a7dc.svg",
+                    "label": "EnvironmentalHazardSvg",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW8ff9d12bdca84a088bb0f475b003a7dc.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSW8ff9d12bdca84a088bb0f475b003a7dc.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSW8ff9d12bdca84a088bb0f475b003a7dc.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSW8ff9d12bdca84a088bb0f475b003a7dc.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSW8ff9d12bdca84a088bb0f475b003a7dc.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
                     "name": "OSW9d4553ced7324cdc9088cdb786c339f8",
                     "label": "SubstanceClassification",
                     "namespace": "NS_CATEGORY",
@@ -278,6 +524,57 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW9d4553ced7324cdc9088cdb786c339f8.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWd0deaf3e4c5448c1a968b6992f3c756a",
+                    "label": "HarmfulToGeneticMaterial",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWd0deaf3e4c5448c1a968b6992f3c756a.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWd0deaf3e4c5448c1a968b6992f3c756a.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWd0deaf3e4c5448c1a968b6992f3c756a.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWd0deaf3e4c5448c1a968b6992f3c756a.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWf9580469aa2047baa4ab11b07d92e6f5",
+                    "label": "HighlyVolatile",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWf9580469aa2047baa4ab11b07d92e6f5.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWf9580469aa2047baa4ab11b07d92e6f5.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWf9580469aa2047baa4ab11b07d92e6f5.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWf9580469aa2047baa4ab11b07d92e6f5.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW957ba9c439f54d268eaf23229fef5948",
+                    "label": "Hygroscopic",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW957ba9c439f54d268eaf23229fef5948.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW957ba9c439f54d268eaf23229fef5948.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW957ba9c439f54d268eaf23229fef5948.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW957ba9c439f54d268eaf23229fef5948.slot_jsondata.json"
                         }
                     }
                 },
@@ -312,6 +609,23 @@
                         },
                         "jsondata": {
                             "urlPath": "Item/OSW92db60f6a7e14865afc8ddb1394f5333.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWf44e85b0e41d4e52aca6acbe6e8f5f1e",
+                    "label": "WaterSensitive",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWf44e85b0e41d4e52aca6acbe6e8f5f1e.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWf44e85b0e41d4e52aca6acbe6e8f5f1e.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWf44e85b0e41d4e52aca6acbe6e8f5f1e.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWf44e85b0e41d4e52aca6acbe6e8f5f1e.slot_jsondata.json"
                         }
                     }
                 }

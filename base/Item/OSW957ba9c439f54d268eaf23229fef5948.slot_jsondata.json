@@ -1,0 +1,27 @@
+{
+    "type": [
+        "Category:OSW9d4553ced7324cdc9088cdb786c339f8"
+    ],
+    "uuid": "957ba9c4-39f5-4d26-8eaf-23229fef5948",
+    "label": [
+        {
+            "text": "Hygroscopic",
+            "lang": "en"
+        },
+        {
+            "text": "Hygroskopisch",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Absorbing or attracting moisture from the air",
+            "lang": "en"
+        },
+        {
+            "text": "Absorption oder Anziehung von Feuchtigkeit aus der Luft",
+            "lang": "de"
+        }
+    ],
+    "name": "Hygroscopic"
+}

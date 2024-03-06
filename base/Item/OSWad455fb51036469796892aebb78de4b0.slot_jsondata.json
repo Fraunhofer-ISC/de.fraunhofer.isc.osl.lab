@@ -1,0 +1,34 @@
+{
+    "type": [
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9"
+    ],
+    "uuid": "ad455fb5-1036-4697-9689-2aebb78de4b0",
+    "label": [
+        {
+            "text": "GHS09: Environmentally hazardous substances",
+            "lang": "en"
+        },
+        {
+            "text": "GHS09: Umweltgefährlicher Stoff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Substances or preparations that are capable of changing the nature of the ecosystem in such a way that they may pose a risk to the environment",
+            "lang": "en"
+        },
+        {
+            "text": "Stoffe oder Zubereitungen, die geeignet sind, die Beschaffenheit des Naturhaushaltes derart zu verändern, dass dadurch Gefahren für die Umwelt herbeigeführt werden können",
+            "lang": "de"
+        }
+    ],
+    "short_name": [
+        {
+            "text": "GHS09",
+            "lang": "en"
+        }
+    ],
+    "name": "Ghs09EnvironmentallyHazardousSubstances",
+    "image": "File:OSW8ff9d12bdca84a088bb0f475b003a7dc.svg"
+}

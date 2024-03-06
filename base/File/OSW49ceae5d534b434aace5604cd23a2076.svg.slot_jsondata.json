@@ -1,0 +1,25 @@
+{
+    "type": [
+        "Category:OSW11a53cdfbdc24524bf8ac435cbf65d9d"
+    ],
+    "uuid": "49ceae5d-534b-434a-ace5-604cd23a2076",
+    "label": [
+        {
+            "text": "Oxidizer.svg",
+            "lang": "en"
+        }
+    ],
+    "editor": [
+        "User:Simon Stier"
+    ],
+    "editing_context": [
+        "Item:OSW339886c2284b4f7a8fa769ddea93ebc2"
+    ],
+    "creator": [
+        "User:Simon Stier"
+    ],
+    "creation_context": [
+        "Item:OSW339886c2284b4f7a8fa769ddea93ebc2"
+    ],
+    "name": "OxidizerSvg"
+}

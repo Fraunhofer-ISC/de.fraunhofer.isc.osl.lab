@@ -1,0 +1,27 @@
+{
+    "type": [
+        "Category:OSW9d4553ced7324cdc9088cdb786c339f8"
+    ],
+    "uuid": "d0deaf3e-4c54-48c1-a968-b6992f3c756a",
+    "label": [
+        {
+            "text": "Harmful to genetic material",
+            "lang": "en"
+        },
+        {
+            "text": "Erbgutschädigend",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "See also H340, H341",
+            "lang": "en"
+        },
+        {
+            "text": "Siehe auch H340, H341",
+            "lang": "de"
+        }
+    ],
+    "name": "HarmfulToGeneticMaterial"
+}

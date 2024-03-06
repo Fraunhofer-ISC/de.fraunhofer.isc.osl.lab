@@ -1,0 +1,27 @@
+{
+    "type": [
+        "Category:OSW9d4553ced7324cdc9088cdb786c339f8"
+    ],
+    "uuid": "f9580469-aa20-47ba-a4ab-11b07d92e6f5",
+    "label": [
+        {
+            "text": "Highly volatile",
+            "lang": "en"
+        },
+        {
+            "text": "Leicht flüchtig",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Volatility is a relative indicator that describes the evaporation of a solvent",
+            "lang": "en"
+        },
+        {
+            "text": "Flüchtigkeit ist eine relative Kennzahl, die die Verdunstung eines Lösungsmittels beschreibt",
+            "lang": "de"
+        }
+    ],
+    "name": "HighlyVolatile"
+}
