@@ -86,6 +86,49 @@
             "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472",
             "minLength": 1
         },
+        "lab": {
+            "title": "Lab",
+            "title*": {
+                "de": "Labor"
+            },
+            "description": "Lab to handle the request",
+            "description*": {
+                "de": "Labor, das den Auftrag bearbeiten soll"
+            },
+            "type": "string",
+            "format": "autocomplete",
+            "$comment": "range: Group, but query subgroups of ZAA",
+            "_range": "Category:OSWb8b6278763d54b0784eea9d3b3d183a4",
+            "default": "Item:OSW40765ed6644d5aecb27f81d257e091b5",
+            "propertyOrder": -9,
+            "options": {
+                "autocomplete": {
+                    "query": "[[HasSuperordinateOu::Item:OSW40765ed6644d5aecb27f81d257e091b5]]OR[[Item:OSW40765ed6644d5aecb27f81d257e091b5]]|?HasAbbreviation=abbreviation",
+                    "field_maps": [
+                        {
+                            "source_path": "$",
+                            "template": "{{{result.printouts.abbreviation.[0]}}}",
+                            "target_path": "root.lab_abbreviation"
+                        }
+                    ]
+                },
+                "options": {
+                    "hidden": "true"
+                }
+            }
+        },
+        "lab_abbreviation": {
+            "title": "Lab Abbreviation",
+            "title*": {
+                "de": "Laborkürzel"
+            },
+            "type": "string",
+            "$comment": "default synced with default lab",
+            "default": "ZAA",
+            "options": {
+                "hidden": true
+            }
+        },
         "project": {
             "type": "string",
             "format": "autocomplete",

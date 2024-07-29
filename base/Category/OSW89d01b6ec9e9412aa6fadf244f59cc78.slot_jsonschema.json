@@ -62,32 +62,17 @@
             "title*": {
                 "de": "Labor"
             },
-            "type": "string",
-            "format": "autocomplete",
-            "$comment": "range: Group, but query subgroups of ZAA",
-            "_range": "Category:OSWb8b6278763d54b0784eea9d3b3d183a4",
+            "description": "Assigned Lab",
+            "description*": {
+                "de": "Zugewiesenes Labor"
+            },
+            "_propertyOrder": -9,
+            "default": null,
             "propertyOrder": -9,
             "options": {
                 "autocomplete": {
-                    "query": "[[HasSuperordinateOu::Item:OSW40765ed6644d5aecb27f81d257e091b5]]|?HasAbbreviation=abbreviation",
-                    "field_maps": [
-                        {
-                            "source_path": "$",
-                            "template": "{{{result.printouts.abbreviation.[0]}}}",
-                            "target_path": "root.lab_abbreviation"
-                        }
-                    ]
+                    "query": "[[HasSuperordinateOu::Item:OSW40765ed6644d5aecb27f81d257e091b5]]|?HasAbbreviation=abbreviation"
                 }
-            }
-        },
-        "lab_abbreviation": {
-            "title": "Lab Abbreviation",
-            "title*": {
-                "de": "Laborkürzel"
-            },
-            "type": "string",
-            "options": {
-                "hidden": true
             }
         }
     }
