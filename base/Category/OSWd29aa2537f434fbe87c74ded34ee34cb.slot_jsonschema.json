@@ -48,8 +48,8 @@
     "uuid": "d29aa253-7f43-4fbe-87c7-4ded34ee34cb",
     "title": "IscZaaKav",
     "title*": {
-        "de": "ZAA Kleinauftrag",
-        "en": "ZAA Small Order"
+        "de": "ZAA Laborauftrag",
+        "en": "ZAA Lab Order"
     },
     "description": "Auftrags-Datenschema Kleinauftragsverwaltung",
     "description*": {

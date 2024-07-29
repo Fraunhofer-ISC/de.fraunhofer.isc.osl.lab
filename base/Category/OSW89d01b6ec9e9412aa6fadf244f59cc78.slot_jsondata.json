@@ -8,22 +8,22 @@
     "uuid": "89d01b6e-c9e9-412a-a6fa-df244f59cc78",
     "label": [
         {
-            "text": "ZAA Kleinauftrag (zugewiesen)",
+            "text": "Laborauftrag",
             "lang": "de"
         },
         {
-            "text": "ZAA Small Order (assigned)",
+            "text": "Lab Order",
             "lang": "en"
         }
-    ],
-    "name": "ZaaKleinauftragZugewiesen",
-    "utf8_icon": [
-        "🛒"
     ],
     "description": [
         {
             "text": "Laborauftrag der einem Labor zugewiesen wurde",
             "lang": "de"
         }
+    ],
+    "name": "Laborauftrag",
+    "utf8_icon": [
+        "🛒"
     ]
 }

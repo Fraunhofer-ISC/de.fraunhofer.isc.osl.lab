@@ -12,10 +12,10 @@
     ],
     "type": "object",
     "uuid": "89d01b6e-c9e9-412a-a6fa-df244f59cc78",
-    "title": "ZaaKleinauftragZugewiesen",
+    "title": "ZaaLaborauftragZugewiesen",
     "title*": {
-        "de": "ZAA Kleinauftrag (zugewiesen)",
-        "en": "ZAA Small Order (assigned)"
+        "de": "Laborauftrag",
+        "en": "Lab Order"
     },
     "description": "Laborauftrag der einem Labor zugewiesen wurde",
     "description*": {

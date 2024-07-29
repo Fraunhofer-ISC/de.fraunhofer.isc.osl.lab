@@ -12,7 +12,7 @@
             "globalID": "de.fraunhofer.isc.osl.lab",
             "label": "ISC Lab",
             "description": "Extends the OpenSemanticWorld Package 'world.opensemantic.lab' with concepts and pages that are specific to the Fraunhofer ISC.",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "requiredPackages": [
                 "world.opensemantic.lab"
             ],
@@ -20,7 +20,7 @@
             "pages": [
                 {
                     "name": "OSWd29aa2537f434fbe87c74ded34ee34cb",
-                    "label": "ZaaKleinauftrag",
+                    "label": "ZaaLabOrder",
                     "namespace": "NS_CATEGORY",
                     "urlPath": "Category/OSWd29aa2537f434fbe87c74ded34ee34cb.slot_main.wikitext",
                     "slots": {
@@ -63,7 +63,7 @@
                 },
                 {
                     "name": "OSW89d01b6ec9e9412aa6fadf244f59cc78",
-                    "label": "ZaaKleinauftragZugewiesen",
+                    "label": "Laborauftrag",
                     "namespace": "NS_CATEGORY",
                     "urlPath": "Category/OSW89d01b6ec9e9412aa6fadf244f59cc78.slot_main.wikitext",
                     "slots": {
