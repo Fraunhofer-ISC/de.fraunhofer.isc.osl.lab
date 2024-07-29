@@ -632,15 +632,16 @@
                 "headerTemplate": "{{ i1 }} - {{ self.name }}",
                 "required": [
                     "uuid",
+                    "label",
+                    "description",
                     "samples"
                 ],
                 "defaultProperties": [
-                    "name",
-                    "reference_processes",
+                    "reference_process",
                     "end_date_time",
                     "status",
                     "actionees",
-                    "attachements"
+                    "attachments"
                 ],
                 "properties": {
                     "uuid": {
@@ -653,29 +654,101 @@
                             "hidden": true
                         }
                     },
-                    "name": {
-                        "type": "string",
-                        "title": "Name",
+                    "label": {
+                        "type": "array",
+                        "title": "Label(s)",
+                        "title*": {
+                            "de": "Bezeichnung(en)"
+                        },
+                        "description": "At least one label is required.",
+                        "description*": {
+                            "de": "Mindestens eine Bezeichnung ist erforderlich."
+                        },
+                        "format": "table",
+                        "eval_template": [
+                            {
+                                "type": "mustache-wikitext",
+                                "mode": "render",
+                                "$comment": "Displays value according to user language with eng as fallback option. Note: {{=<% %>=}} changes mustache expression from {{..}} to <% %> for mixing with wikitext templates",
+                                "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%#label%> | {{#ifeq: <%lang%>|en|#default|<%lang%>}} = <%text%> <%/label%> }}"
+                            }
+                        ],
+                        "items": {
+                            "title": "Label",
+                            "title*": {
+                                "de": "Bezeichnung"
+                            },
+                            "eval_template": [
+                                {
+                                    "type": "wikitext",
+                                    "mode": "store",
+                                    "value": "{{{text}}}@{{{lang}}}"
+                                }
+                            ],
+                            "$ref": "/wiki/JsonSchema:Label?action=raw"
+                        },
+                        "minItems": 1,
                         "options": {
                             "grid_columns": 12
                         }
                     },
-                    "reference_processes": {
-                        "type": "array",
-                        "title": "Reference Processes",
+                    "description": {
+                        "title": "Description",
                         "title*": {
-                            "de": "Referenzen / Vorlagen"
+                            "de": "Beschreibung"
+                        },
+                        "type": "array",
+                        "format": "table",
+                        "eval_template": {
+                            "type": "mustache-wikitext",
+                            "mode": "render",
+                            "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%={{ }}=%> {{#description}} |{{lang}}={{text}} {{/description}} {{=<% %>=}} }}"
                         },
                         "items": {
-                            "type": "string",
-                            "title": "Reference",
-                            "title*": {
-                                "de": "Referenz"
-                            },
-                            "format": "autocomplete",
-                            "range": "Category:OSW2b2649b89d1e4ae4866c8cd18e1652e2"
+                            "eval_template": [
+                                {
+                                    "type": "wikitext",
+                                    "mode": "store",
+                                    "value": "{{{text}}}@{{{lang}}}"
+                                }
+                            ],
+                            "$ref": "/wiki/JsonSchema:Description?action=raw"
                         },
                         "options": {
+                            "grid_columns": 12
+                        }
+                    },
+                    "reference_process": {
+                        "type": "string",
+                        "title": "Reference Process",
+                        "title*": {
+                            "de": "Aufgabenvorlagen"
+                        },
+                        "propertyOrder": -1,
+                        "format": "autocomplete",
+                        "range": "Category:OSW2b2649b89d1e4ae4866c8cd18e1652e2",
+                        "watch": {
+                            "label": "task.label",
+                            "description": "task.description"
+                        },
+                        "options": {
+                            "autocomplete": {
+                                "query": "[[Category:OSW2b2649b89d1e4ae4866c8cd18e1652e2]]|?HasLabel=label|?HasDescription=description",
+                                "field_maps": [
+                                    {
+                                        "source_path": "$",
+                                        "template": "[{{#each result.printouts.label}}{\"text\": \"{{{.}}}\"}{{/each}}]",
+                                        "target_path": "$(label)"
+                                    },
+                                    {
+                                        "source_path": "$",
+                                        "$comment": "multilang properties are normalized",
+                                        "template_multilang": "[{{#each result.printouts.description}}{\"text\": \"{{{Text.item.[0]}}}\", \"lang\": \"{{{[Language code].item.[0]}}}\"}{{/each}}]",
+                                        "template": "[{{#each result.printouts.description}}{\"text\": \"{{{.}}}\"}{{/each}}]",
+                                        "target_path": "$(description)"
+                                    }
+                                ]
+                            },
                             "grid_columns": 12
                         }
                     },
@@ -755,12 +828,6 @@
                             "watch": {
                                 "available_samples": "root.samples"
                             },
-                            "eval_template": [
-                                {
-                                    "type": "mustache-wikitext",
-                                    "value": "{{=<% %>=}} {{FULLPAGENAME}}#<%={{ }}=%>{{.}}"
-                                }
-                            ],
                             "enumSource": [
                                 {
                                     "source": "available_samples",
@@ -773,33 +840,7 @@
                             "grid_columns": 12
                         }
                     },
-                    "description": {
-                        "title": "Description",
-                        "title*": {
-                            "de": "Beschreibung"
-                        },
-                        "type": "array",
-                        "format": "table",
-                        "eval_template": {
-                            "type": "mustache-wikitext",
-                            "mode": "render",
-                            "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%={{ }}=%> {{#description}} |{{lang}}={{text}} {{/description}} {{=<% %>=}} }}"
-                        },
-                        "items": {
-                            "eval_template": [
-                                {
-                                    "type": "wikitext",
-                                    "mode": "store",
-                                    "value": "{{{text}}}@{{{lang}}}"
-                                }
-                            ],
-                            "$ref": "/wiki/JsonSchema:Description?action=raw"
-                        },
-                        "options": {
-                            "grid_columns": 12
-                        }
-                    },
-                    "attachements": {
+                    "attachments": {
                         "title": "File attachments",
                         "title*": {
                             "de": "Dateianhänge"
