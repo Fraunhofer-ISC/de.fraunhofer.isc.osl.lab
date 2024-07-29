@@ -12,7 +12,7 @@
             "globalID": "de.fraunhofer.isc.osl.lab",
             "label": "ISC Lab",
             "description": "Extends the OpenSemanticWorld Package 'world.opensemantic.lab' with concepts and pages that are specific to the Fraunhofer ISC.",
-            "version": "0.3.2",
+            "version": "0.3.3",
             "requiredPackages": [
                 "world.opensemantic.lab"
             ],

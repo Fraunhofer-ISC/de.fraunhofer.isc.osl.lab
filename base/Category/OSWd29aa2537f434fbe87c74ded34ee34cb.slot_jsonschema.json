@@ -303,10 +303,18 @@
                 "enable_array_copy": true,
                 "array_copy_ignore": [
                     "uuid",
+                    "osw_id",
                     "id",
                     "attachements"
                 ]
             },
+            "eval_template": [
+                {
+                    "type": "mustache-wikitext",
+                    "mode": "render",
+                    "value": "{{#samples}}{{{id}}}, {{/samples}}"
+                }
+            ],
             "items": {
                 "type": "object",
                 "format": "grid-strict",
@@ -314,9 +322,11 @@
                 "title*": {
                     "de": "Probe"
                 },
+                "id": "sample",
                 "headerTemplate": "{{ i1 }} - {{ self.id }}",
                 "required": [
                     "uuid",
+                    "osw_id",
                     "id",
                     "name",
                     "receipt_date"
@@ -325,12 +335,30 @@
                     "uuid": {
                         "title": "UUID",
                         "type": "string",
-                        "$comment": "format uuid field are copied, template fields are regenerated",
-                        "format": "uuid",
-                        "template": "dynamic_template",
-                        "_dynamic_template": "{{_uuid_}}",
+                        "$comment": "format uuid field are copied, if not set in copy_ignore",
+                        "_format": "uuid",
+                        "_template": "dynamic_template",
+                        "dynamic_template": "{{_uuid_}}",
                         "options": {
-                            "hidden": true
+                            "hidden": true,
+                            "dynamic_template": {
+                                "override": "empty"
+                            }
+                        }
+                    },
+                    "osw_id": {
+                        "title": "OSW-ID",
+                        "type": "string",
+                        "watch": {
+                            "_own_uuid": "sample.uuid"
+                        },
+                        "_format": "dynamic_template",
+                        "dynamic_template": "{{_current_subject_}}#OSW{{#replace '-' ''}}{{_own_uuid}}{{/replace}}",
+                        "options": {
+                            "hidden": true,
+                            "dynamic_template": {
+                                "override": "empty"
+                            }
                         }
                     },
                     "id": {
@@ -342,6 +370,7 @@
                             "de": "Wird automatisch generiert"
                         },
                         "type": "string",
+                        "readOnly": true,
                         "format": "dynamic_template",
                         "dynamic_template": "P{{patternformat '00' _array_index_}}",
                         "options": {
@@ -574,8 +603,18 @@
                 "de": "Aufgaben"
             },
             "options": {
-                "enable_array_copy": true
+                "enable_array_copy": true,
+                "array_copy_ignore": [
+                    "uuid"
+                ]
             },
+            "eval_template": [
+                {
+                    "type": "mustache-wikitext",
+                    "mode": "render",
+                    "value": "{{#tasks}}{{{name}}} <br> {{/tasks}}"
+                }
+            ],
             "items": {
                 "type": "object",
                 "format": "grid-strict",
@@ -583,6 +622,7 @@
                 "title*": {
                     "de": "Aufgabe"
                 },
+                "id": "task",
                 "headerTemplate": "{{ i1 }} - {{ self.name }}",
                 "required": [
                     "uuid",
@@ -600,10 +640,9 @@
                     "uuid": {
                         "title": "UUID",
                         "type": "string",
-                        "$comment": "format uuid field are copied, template fields are regenerated",
+                        "$comment": "format uuid field are copied, if not set in copy_ignore",
                         "format": "uuid",
                         "template": "dynamic_template",
-                        "_dynamic_template": "{{_uuid_}}",
                         "options": {
                             "hidden": true
                         }
@@ -719,7 +758,7 @@
                             "enumSource": [
                                 {
                                     "source": "available_samples",
-                                    "value": "OSW{{#replace '-' ''}}{{item.uuid}}{{/replace}}",
+                                    "value": "{{item.osw_id}}",
                                     "title": "{{item.id}} - {{item.name}}"
                                 }
                             ]
