@@ -1,0 +1,38 @@
+{
+    "@context": [
+        "/wiki/Category:OSW44deaa5b806d41a2a88594f562b110e9?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW44deaa5b806d41a2a88594f562b110e9?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "9e1d8336-9425-4a52-a841-a273282505ab",
+    "title": "ContactPerson",
+    "title*": {
+        "en": "Contact person",
+        "de": "Ansprechpartner"
+    },
+    "description": "Contact person for a client",
+    "description*": {
+        "en": "Contact person for a client",
+        "de": "Kontaktperson für einen Auftraggeber"
+    },
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW9e1d833694254a52a841a273282505ab"
+            ]
+        },
+        "organization": {
+            "options": {
+                "$comment": "hide it since Client has contact_persons. ToDo: Use reverse relation / auto-populate this field from Client",
+                "hidden": true
+            }
+        }
+    }
+}

@@ -12,7 +12,7 @@
             "globalID": "de.fraunhofer.isc.osl.lab",
             "label": "ISC Lab",
             "description": "Extends the OpenSemanticWorld Package 'world.opensemantic.lab' with concepts and pages that are specific to the Fraunhofer ISC.",
-            "version": "0.4.0",
+            "version": "0.5.0",
             "requiredPackages": [
                 "world.opensemantic.lab"
             ],
@@ -38,26 +38,6 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSWd29aa2537f434fbe87c74ded34ee34cb.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
-                    "name": "OSW3a86b2496454417296ad2cd784194da6",
-                    "label": "IscZaaKavTabs",
-                    "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSW3a86b2496454417296ad2cd784194da6.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Category/OSW3a86b2496454417296ad2cd784194da6.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Category/OSW3a86b2496454417296ad2cd784194da6.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Category/OSW3a86b2496454417296ad2cd784194da6.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Category/OSW3a86b2496454417296ad2cd784194da6.slot_jsonschema.json"
                         }
                     }
                 },
@@ -98,6 +78,46 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW2b2649b89d1e4ae4866c8cd18e1652e2.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW55d23035243141ff95db51d4100ac31e",
+                    "label": "Client",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW55d23035243141ff95db51d4100ac31e.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW55d23035243141ff95db51d4100ac31e.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW55d23035243141ff95db51d4100ac31e.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW55d23035243141ff95db51d4100ac31e.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW55d23035243141ff95db51d4100ac31e.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW9e1d833694254a52a841a273282505ab",
+                    "label": "ContactPerson",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW9e1d833694254a52a841a273282505ab.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW9e1d833694254a52a841a273282505ab.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW9e1d833694254a52a841a273282505ab.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW9e1d833694254a52a841a273282505ab.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW9e1d833694254a52a841a273282505ab.slot_jsonschema.json"
                         }
                     }
                 },

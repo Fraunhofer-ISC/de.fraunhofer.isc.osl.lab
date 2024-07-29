@@ -1,0 +1,80 @@
+{
+    "@context": [
+        "/wiki/Category:OSW1969007d5acf40539642877659a02c23?action=raw&slot=jsonschema",
+        {
+            "contact_persons": {
+                "@id": "Property:HasContactPerson",
+                "@type": "@id"
+            }
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW1969007d5acf40539642877659a02c23?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "55d23035-2431-41ff-95db-51d4100ac31e",
+    "title": "Client",
+    "title*": {
+        "en": "Client",
+        "de": "Auftraggeber"
+    },
+    "description": "Organization that submits an order",
+    "description*": {
+        "en": "Organization that submits an order",
+        "de": "Organisation die einen Auftrag erteilt"
+    },
+    "required": [
+        "type",
+        "contact_persons"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW55d23035243141ff95db51d4100ac31e"
+            ]
+        },
+        "label": {
+            "title": "Client Name",
+            "title*": {
+                "de": "Firmen-Bezeichnung"
+            },
+            "propertyOrder": -100
+        },
+        "contact_persons": {
+            "title": "Contact person(s)",
+            "title*": {
+                "de": "Ansprechpartner"
+            },
+            "description": "The preferred contact persons of this organization(al unit).",
+            "description*": {
+                "de": "Die bevorzugten Kontaktperson(en) dieser Organisation(seinheit)."
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "Contact person",
+                "title*": {
+                    "de": "Ansprechpartner"
+                },
+                "type": "string",
+                "format": "autocomplete",
+                "range": "Category:OSW9e1d833694254a52a841a273282505ab",
+                "options": {
+                    "compact": true
+                }
+            },
+            "uniqueItems": true,
+            "minItems": 1,
+            "propertyOrder": -98
+        },
+        "description": {
+            "title": "Comments",
+            "title*": {
+                "de": "Anmerkungen"
+            },
+            "propertyOrder": 10001
+        }
+    }
+}

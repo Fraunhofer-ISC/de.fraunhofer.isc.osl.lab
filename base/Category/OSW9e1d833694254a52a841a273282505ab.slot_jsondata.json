@@ -1,0 +1,34 @@
+{
+    "subclass_of": [
+        "Category:OSW44deaa5b806d41a2a88594f562b110e9"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "9e1d8336-9425-4a52-a841-a273282505ab",
+    "label": [
+        {
+            "text": "Contact person",
+            "lang": "en"
+        },
+        {
+            "text": "Ansprechpartner",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Contact person for a client",
+            "lang": "en"
+        },
+        {
+            "text": "Kontaktperson für einen Auftraggeber",
+            "lang": "de"
+        }
+    ],
+    "name": "ContactPerson",
+    "utf8_icon": [
+        "👥",
+        "📇"
+    ]
+}
