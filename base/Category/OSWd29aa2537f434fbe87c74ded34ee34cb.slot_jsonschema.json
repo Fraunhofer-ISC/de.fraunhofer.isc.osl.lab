@@ -404,34 +404,28 @@
                         "title*": {
                             "de": "Nach Gebrauch (Zielzustand)"
                         },
-                        "type": "array",
-                        "format": "choices",
-                        "items": {
-                            "type": "string",
-                            "_format": "autocomplete",
-                            "range": "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d",
-                            "enum": [
-                                "Item:OSW60bd050bf7c5459182fe638351d9cea7",
-                                "Item:OSWe44f5c0404d8422dbd3fafbc66687264",
-                                "Item:OSWfaa3d40356f64db0ae0852935ec9ccb6"
-                            ],
-                            "options": {
-                                "enum_titles": [
-                                    "Send back",
-                                    "Dispose",
-                                    "Store"
-                                ],
-                                "enum_titles*": {
-                                    "de": [
-                                        "Zurückschicken",
-                                        "Entsorgen",
-                                        "Lagern"
-                                    ]
-                                }
-                            }
-                        },
+                        "type": "string",
+                        "_format": "autocomplete",
+                        "range": "Category:OSWbd354f0cbc7c41d38ee301be9bb3ce8d",
+                        "enum": [
+                            "Item:OSW60bd050bf7c5459182fe638351d9cea7",
+                            "Item:OSWe44f5c0404d8422dbd3fafbc66687264",
+                            "Item:OSWfaa3d40356f64db0ae0852935ec9ccb6"
+                        ],
                         "options": {
-                            "grid_columns": 8
+                            "grid_columns": 8,
+                            "enum_titles": [
+                                "Send back",
+                                "Dispose",
+                                "Store"
+                            ],
+                            "enum_titles*": {
+                                "de": [
+                                    "Zurückschicken",
+                                    "Entsorgen",
+                                    "Lagern"
+                                ]
+                            }
                         }
                     },
                     "ghs_classification": {
@@ -440,7 +434,8 @@
                             "de": "Gefahrstoffklassifizierung"
                         },
                         "type": "array",
-                        "format": "choices",
+                        "format": "selectize",
+                        "uniqueItems": true,
                         "items": {
                             "title": "",
                             "type": "string",
@@ -448,17 +443,41 @@
                             "range": "Category:OSWae1ec765ea47421695e9e8af5e212cb9",
                             "enum": [
                                 "Item:OSWc9ccfe2e330d4ddcb33f02454fff6fcc",
-                                "Item:OSW052811fa2436493aa9ddc5f035542e21"
+                                "Item:OSW052811fa2436493aa9ddc5f035542e21",
+                                "Item:OSW339886c2284b4f7a8fa769ddea93ebc2",
+                                "Item:OSW75506ab31f8b4e92b5be9d0ec04ee2f9",
+                                "Item:OSW7d0c0b54f1fe4598862c536da6c18d11",
+                                "Item:OSWf4551e8c9cb4461bb64eec3fc923dfe9",
+                                "Item:OSW9bec9fe8dc6841eeb1552e39704a660a",
+                                "Item:OSWf9c34cccbe9c472193d0a82c78a2eecc",
+                                "Item:OSWad455fb51036469796892aebb78de4b0",
+                                "Item:OSW19896381a4204a69926cbe5cb3f4b66a"
                             ],
                             "options": {
                                 "enum_titles": [
                                     "GHS01: Explosive substance",
-                                    "GHS02: Flammable substance"
+                                    "GHS02: Flammable substance",
+                                    "GHS03: Oxidizing substance",
+                                    "GHS04: Pressurized substance",
+                                    "GHS05: Corrosive substance",
+                                    "GHS06: Poisonous substance",
+                                    "GHS07: Irritant substance",
+                                    "GHS08: Health hazardous substances",
+                                    "GHS09: Environmentally hazardous substances",
+                                    "GHS00: No Hazard"
                                 ],
                                 "enum_titles*": {
                                     "de": [
                                         "GHS01: Explosiver Stoff",
-                                        "GHS02: Entzündlicher Stoff"
+                                        "GHS02: Entzündlicher Stoff",
+                                        "GHS03: Oxidierender Stoff",
+                                        "GHS04: Unter Druck stehender Stoff",
+                                        "GHS05: Ätzender Stoff",
+                                        "GHS06: Giftiger Stoff",
+                                        "GHS07: Reizender Stoff",
+                                        "GHS08: Gesundheitsgefährdender Stoff",
+                                        "GHS09: Umweltgefährdender Stoff",
+                                        "GHS00: Kein Gefahrstoff"
                                     ]
                                 }
                             }
@@ -470,28 +489,44 @@
                     "additional_classification": {
                         "title": "Sample properties",
                         "title*": {
-                            "de": "Probeneigenschaft"
+                            "de": "Probeneigenschaften"
                         },
                         "type": "array",
-                        "format": "choices",
+                        "format": "selectize",
+                        "uniqueItems": true,
                         "items": {
                             "title": "",
                             "type": "string",
                             "_format": "autocomplete",
                             "range": "Category:OSW9d4553ced7324cdc9088cdb786c339f8",
                             "enum": [
+                                "Item:OSWd0deaf3e4c5448c1a968b6992f3c756a",
+                                "Item:OSWf9580469aa2047baa4ab11b07d92e6f5",
+                                "Item:OSW957ba9c439f54d268eaf23229fef5948",
                                 "Item:OSW645887b914d74ea2aae860f572932c73",
-                                "Item:OSW92db60f6a7e14865afc8ddb1394f5333"
+                                "Item:OSW92db60f6a7e14865afc8ddb1394f5333",
+                                "Item:OSWf44e85b0e41d4e52aca6acbe6e8f5f1e",
+                                "Item:OSWd0853fd43a364c509da2eb305d878349"
                             ],
                             "options": {
                                 "enum_titles": [
+                                    "Harmful to genetic material",
+                                    "Highly volatile",
+                                    "Hygroscopic",
                                     "Temperature sensitive",
-                                    "Unknown composition"
+                                    "Unknown composition",
+                                    "Water sensitive",
+                                    "Old mineral wool"
                                 ],
                                 "enum_titles*": {
                                     "de": [
+                                        "Erbgutschädigend",
+                                        "Leichtflüchtig",
+                                        "Hygroskopisch",
                                         "Temperaturempfindlich",
-                                        "Unbekannte Zusammensetzung"
+                                        "Unbekannte Zusammensetzung",
+                                        "Wasserempfindlich",
+                                        "Alt-Mineralwolle"
                                     ]
                                 }
                             }
@@ -614,7 +649,6 @@
                     "status": {
                         "type": "string",
                         "_format": "autocomplete",
-                        "format": "choices",
                         "title": "Status",
                         "range": "Category:OSW9725d7a91bab4f1aa68f423e4e9bfcf4",
                         "enum": [
@@ -664,7 +698,9 @@
                             "de": "Proben"
                         },
                         "format": "table",
+                        "$comment": "selectize does not work here, see https://github.com/json-editor/json-editor/issues/1484",
                         "_format": "selectize",
+                        "uniqueItems": true,
                         "items": {
                             "type": "string",
                             "title": "Sample",
