@@ -11,14 +11,21 @@
                 "@id": "Property:IsPartOf",
                 "@type": "@id"
             },
-            "samples": {
+            "lab*": {
+                "@id": "Property:HasLab",
+                "@type": "@id"
+            },
+            "lab_abbreviation": "Property:HasLabAbbreviation",
+            "_samples": {
                 "@id": "Property:HasInput",
                 "@type": "@id"
             },
-            "tasks": {
+            "samples": "Property:HasInput",
+            "_tasks": {
                 "@id": "Property:HasPart",
                 "@type": "@id"
             },
+            "tasks": "Property:HasPart",
             "reference_processes": {
                 "@id": "Property:HasReferenceProcess",
                 "@type": "@id"
@@ -35,7 +42,11 @@
             "additional_classification": {
                 "@id": "Property:HasSampleClassification",
                 "@type": "@id"
-            }
+            },
+            "cost_accounting": "Property:HasCostAccountingId",
+            "nominal_expenditure_of_time_in_h": "Property:HasNominalExpenditureOfTime",
+            "actual_expenditure_of_time_in_h": "Property:HasActualExpenditureOfTime",
+            "actual_expenditure_of_time_comment": "Property:HasActualExpenditureOfTimeComment"
         }
     ],
     "allOf": [
@@ -44,6 +55,7 @@
         }
     ],
     "type": "object",
+    "format": "categories",
     "id": "root",
     "uuid": "d29aa253-7f43-4fbe-87c7-4ded34ee34cb",
     "title": "IscZaaKav",
@@ -58,32 +70,63 @@
     "required": [
         "type",
         "creator",
-        "orderer",
         "contact",
-        "cost_accounting",
         "start_date_time",
-        "expenditure_of_time_in_h"
+        "status"
     ],
     "defaultProperties": [
-        "offer_number",
-        "keywords",
+        "lab",
+        "lab_abbreviation",
+        "orderer",
         "actionees",
+        "offer_number",
+        "cost_accounting",
         "end_date_time",
-        "status",
         "samples",
         "tasks"
     ],
     "options": {
-        "remove_empty_properties": true
+        "remove_empty_properties": false,
+        "allow_submit_with_errors": false
     },
     "properties": {
         "type": {
             "default": [
                 "Category:OSWd29aa2537f434fbe87c74ded34ee34cb"
-            ]
+            ],
+            "options": {
+                "hidden": "true"
+            }
+        },
+        "creator": {
+            "title": "Creator",
+            "title*": {
+                "de": "Ersteller"
+            },
+            "format": "dynamic_template",
+            "dynamic_template": "{{_current_user_}}",
+            "options": {
+                "hidden": "true",
+                "dynamic_template": {
+                    "override": "empty"
+                }
+            },
+            "minLength": 1
         },
         "orderer": {
-            "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472",
+            "title": "Client",
+            "title*": {
+                "de": "Auftraggeber"
+            },
+            "range": "Category:OSW55d23035243141ff95db51d4100ac31e",
+            "options": {
+                "autocomplete": {
+                    "$comment": "We need to override the process schema here. Range is Client, but query is OU",
+                    "query": "[[Category:OSW3cb8cef2225e403092f098f99bc4c472]]"
+                }
+            }
+        },
+        "contact": {
             "minLength": 1
         },
         "lab": {
@@ -151,22 +194,25 @@
                 "de": "Zugeordnetes Projekt / PSP Element"
             },
             "type": "string",
-            "pattern": "^[0-9]{2}-[0-9]{5}-[0-9]{4}-[0-9]{5}$",
+            "$comment": "pattern will enforce value fully specified if imask is not lazy (returns '----' on empty input)",
+            "pattern": "^$|^[0-9]{2}-[0-9]{5}-[0-9]{4}-[0-9]{5}$",
             "options": {
                 "imask": {
                     "returnUnmasked": false,
                     "mask": "00-00000-0000-00000",
-                    "lazy": false
+                    "lazy": true
                 }
             }
         },
         "start_date_time": {
+            "title": "Date of order",
             "title*": {
                 "de": "Beauftragungszeitpunkt"
             },
             "description*": {
                 "de": "Zeitpunkt, zu dem der Auftrag begonnen wird"
-            }
+            },
+            "minLength": 1
         },
         "offer_number": {
             "title": "Offer number",
@@ -178,25 +224,40 @@
             },
             "type": "string"
         },
-        "expenditure_of_time_in_h": {
-            "title": "Expenditure of time",
+        "nominal_expenditure_of_time_in_h": {
+            "title": "Estimated expenditure of time",
             "title*": {
-                "de": "Bearbeitungsdauer"
+                "de": "Geschätzte Bearbeitungsdauer [h]"
             },
             "description*": {
                 "de": "Geschätzter Zeitaufwand des Auftrags"
             },
             "type": "string",
-            "pattern": "^[0-9]*\\.[0-9]*$",
-            "options": {
-                "imask": {
-                    "returnUnmasked": true,
-                    "mask": "{0[00].0} h",
-                    "lazy": false
-                }
-            }
+            "format": "number"
+        },
+        "actual_expenditure_of_time_in_h": {
+            "title": "Actual expenditure of time",
+            "title*": {
+                "de": "Tatsächliche Bearbeitungsdauer [h]"
+            },
+            "description*": {
+                "de": "Tatsächlicher Zeitaufwand des Auftrags"
+            },
+            "type": "string",
+            "format": "number"
+        },
+        "actual_expenditure_of_time_comment": {
+            "title": "Comment on the expenditure of time",
+            "title*": {
+                "de": "Kommentar zur Bearbeitungsdauer"
+            },
+            "description*": {
+                "de": "Anmerkung, z.b. über die Monatsaufteilung"
+            },
+            "type": "string"
         },
         "actionees": {
+            "title": "To be handled by",
             "title*": {
                 "de": "Zu bearbeiten durch"
             },
@@ -205,6 +266,7 @@
             }
         },
         "end_date_time": {
+            "title": "Planned completion",
             "title*": {
                 "de": "Geplante Fertigstellung"
             },
@@ -213,10 +275,14 @@
             }
         },
         "status": {
+            "title": "Status",
+            "title*": {
+                "de": "Status"
+            },
             "description*": {
                 "de": "Kann auf Done gesetzt werden, sobald der Auftrag vollständig bearbeitet ist"
             },
-            "$comment": "ToDo",
+            "$comment": "default: ToDo",
             "default": "Item:OSWaa8d29404288446a9f3ec7afa4e2a512"
         },
         "workflow_runs": {
@@ -250,6 +316,7 @@
                         "title": "UUID",
                         "type": "string",
                         "format": "uuid",
+                        "template": "dynamic_template",
                         "options": {
                             "hidden": true
                         }

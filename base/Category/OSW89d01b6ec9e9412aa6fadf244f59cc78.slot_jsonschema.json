@@ -27,10 +27,12 @@
         "lab",
         "lab_abbreviation"
     ],
-    "defaultProperties": [],
-    "options": {
-        "remove_empty_properties": true
-    },
+    "defaultProperties": [
+        "nominal_expenditure_of_time_in_h",
+        "actual_expenditure_of_time_in_h",
+        "actual_expenditure_of_time_comment"
+    ],
+    "options": {},
     "properties": {
         "type": {
             "default": [
