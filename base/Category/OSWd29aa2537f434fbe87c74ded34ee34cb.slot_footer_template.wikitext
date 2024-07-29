@@ -13,10 +13,11 @@
 |?HasName=Name
 |?HasReceiptDate#LOCL@TO#-F[d.M.Y]=Eingangsdatum
 |?HasDescription=Beschreibung
-|?HasTargetStatus=Nach Verwendung
-|?HasFileAttachment=Anhang
+|?HasTargetStatus.HasLabel=Nach Verwendung
 |?HasGhsClassification.HasImage#75px=Gefährdungen
-|?HasSampleClassification=Eigenschaften
+|?HasSampleClassification.HasLabel=Eigenschaften
+|?HasFileAttachment#75px=Anhang
+|mainlabel=-
 |sort=HasId
 |format=table
 }}
@@ -24,12 +25,14 @@
 == Aufgaben ==
 <!--<div class="pagebot-button" data-config='{ "params": {"categories": ["Category:Item"], "jsondata": {"label": [{"text": "test", "lang": "en"}]}} }'></div>-->
 {{#ask:[[-HasPart::{{FULLPAGENAME}}]]
-|?Display title of=Name
-|?HasInput=Auftrag/Proben
+|?HasLabel=Name
+|?HasInput.HasId=Proben
 |?HasDescription=Beschreibung
 |?HasReferenceProcess=Vorlage
 |?HasStatus=Status
-|?Due date#LOCL@TO#-F[d.M.Y]=Fällig
+|?HasEndDateAndTime#LOCL@TO#-F[d.M.Y]=Fällig
+|?HasFileAttachment#75px=Anhang
+|mainlabel=-
 <!--|sort=Due date-->
 |format=table
 }}
