@@ -305,7 +305,7 @@
                     "uuid",
                     "osw_id",
                     "id",
-                    "attachements"
+                    "attachments"
                 ]
             },
             "eval_template": [
@@ -330,6 +330,12 @@
                     "id",
                     "name",
                     "receipt_date"
+                ],
+                "defaultProperties": [
+                    "description",
+                    "target_status",
+                    "ghs_classification",
+                    "additional_classification"
                 ],
                 "properties": {
                     "uuid": {
@@ -564,7 +570,7 @@
                             "grid_columns": 6
                         }
                     },
-                    "attachements": {
+                    "attachments": {
                         "title": "File attachments",
                         "title*": {
                             "de": "Dateianhänge"
