@@ -1,0 +1,29 @@
+{
+    "type": [
+        "Category:DataProperty"
+    ],
+    "name": "HasReceiptDate",
+    "property_type": "Date",
+    "uuid": "3214ec6b-f34a-475b-a3d5-affefaca65ed",
+    "label": [
+        {
+            "text": "ReceiptDate",
+            "lang": "en"
+        },
+        {
+            "text": "Eingangsdatum",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "The date on which a shipment reaches the recipient",
+            "lang": "de"
+        },
+        {
+            "text": "Das Datum an dem eine Sendung den Empfänger erreicht",
+            "lang": "de"
+        }
+    ],
+    "subproperty_of": "Property:HasDate"
+}

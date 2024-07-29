@@ -1,0 +1,15 @@
+{
+    "type": [
+        "Category:DataProperty"
+    ],
+    "name": "HasLabAbbreviation",
+    "property_type": "Text",
+    "uuid": "31c7f546-24e2-42a9-a8b9-cd1afe6ed3b7",
+    "label": [
+        {
+            "text": "HasLabAbbreviation",
+            "lang": "en"
+        }
+    ],
+    "description": []
+}

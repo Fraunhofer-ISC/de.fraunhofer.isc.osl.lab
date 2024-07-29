@@ -1,0 +1,20 @@
+{
+    "type": [
+        "Category:DataProperty"
+    ],
+    "name": "HasCostAccountingId",
+    "property_type": "Text",
+    "uuid": "56482772-4064-4d81-a5b4-5210978a9626",
+    "label": [
+        {
+            "text": "Cost accounting id",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "Provides and identifier for the cost accounting",
+            "lang": "en"
+        }
+    ]
+}

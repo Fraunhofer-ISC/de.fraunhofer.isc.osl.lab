@@ -1,0 +1,19 @@
+{
+    "type": [
+        "Category:DataProperty"
+    ],
+    "name": "HasActualExpenditureOfTime",
+    "property_type": "Text",
+    "uuid": "7d0ce26b-3f79-4b1c-af3f-4d095a8b9c38",
+    "label": [
+        {
+            "text": "Actual expenditure of time",
+            "lang": "en"
+        },
+        {
+            "text": "Tatsächliche Bearbeitungszeit",
+            "lang": "de"
+        }
+    ],
+    "description": []
+}

@@ -1,0 +1,19 @@
+{
+    "type": [
+        "Category:DataProperty"
+    ],
+    "name": "HasActualExpenditureOfTimeComment",
+    "property_type": "Text",
+    "uuid": "b1111717-8d57-4c3c-b15e-1cb195a7a8be",
+    "label": [
+        {
+            "text": "Actual expenditure of time comment",
+            "lang": "en"
+        },
+        {
+            "text": "Kommentar zur tatsächlichen Bearbeitungszeit",
+            "lang": "de"
+        }
+    ],
+    "description": []
+}

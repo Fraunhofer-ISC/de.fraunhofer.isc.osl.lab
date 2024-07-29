@@ -1,0 +1,33 @@
+{
+    "type": [
+        "Category:OSWae1ec765ea47421695e9e8af5e212cb9"
+    ],
+    "uuid": "19896381-a420-4a69-926c-be5cb3f4b66a",
+    "label": [
+        {
+            "text": "GHS00: No Hazard",
+            "lang": "en"
+        },
+        {
+            "text": "GHS00: Kein Gefahrstoff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Fictitious class for substances that are explicitly not hazardous",
+            "lang": "en"
+        },
+        {
+            "text": "Fiktive Klasse für Stoffe die explizit keine Gefahrstoffe sind",
+            "lang": "de"
+        }
+    ],
+    "short_name": [
+        {
+            "text": "GHS00",
+            "lang": "en"
+        }
+    ],
+    "name": "Ghs00NoHazard"
+}

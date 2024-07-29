@@ -12,7 +12,7 @@
             "globalID": "de.fraunhofer.isc.osl.lab",
             "label": "ISC Lab",
             "description": "Extends the OpenSemanticWorld Package 'world.opensemantic.lab' with concepts and pages that are specific to the Fraunhofer ISC.",
-            "version": "0.2.0",
+            "version": "0.3.0",
             "requiredPackages": [
                 "world.opensemantic.lab"
             ],
@@ -189,6 +189,23 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSWae1ec765ea47421695e9e8af5e212cb9.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW19896381a4204a69926cbe5cb3f4b66a",
+                    "label": "Ghs00NoHazard",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW19896381a4204a69926cbe5cb3f4b66a.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW19896381a4204a69926cbe5cb3f4b66a.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW19896381a4204a69926cbe5cb3f4b66a.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW19896381a4204a69926cbe5cb3f4b66a.slot_jsondata.json"
                         }
                     }
                 },
@@ -626,6 +643,125 @@
                         },
                         "jsondata": {
                             "urlPath": "Item/OSWf44e85b0e41d4e52aca6acbe6e8f5f1e.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWd0853fd43a364c509da2eb305d878349",
+                    "label": "OldMineralWool",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWd0853fd43a364c509da2eb305d878349.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWd0853fd43a364c509da2eb305d878349.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWd0853fd43a364c509da2eb305d878349.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWd0853fd43a364c509da2eb305d878349.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasReceiptDate",
+                    "label": "HasReceiptDate",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasReceiptDate.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasReceiptDate.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasReceiptDate.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasReceiptDate.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasLabAbbreviation",
+                    "label": "HasLabAbbreviation",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasLabAbbreviation.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasLabAbbreviation.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasLabAbbreviation.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasLabAbbreviation.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasCostAccountingId",
+                    "label": "HasCostAccountingId",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasCostAccountingId.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasCostAccountingId.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasCostAccountingId.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasCostAccountingId.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasNominalExpenditureOfTime",
+                    "label": "HasNominalExpenditureOfTime",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasNominalExpenditureOfTime.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasNominalExpenditureOfTime.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasNominalExpenditureOfTime.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasNominalExpenditureOfTime.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasActualExpenditureOfTime",
+                    "label": "HasActualExpenditureOfTime",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasActualExpenditureOfTime.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasActualExpenditureOfTime.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasActualExpenditureOfTime.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasActualExpenditureOfTime.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasActualExpenditureOfTimeComment",
+                    "label": "HasActualExpenditureOfTimeComment",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasActualExpenditureOfTimeComment.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasActualExpenditureOfTimeComment.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasActualExpenditureOfTimeComment.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasActualExpenditureOfTimeComment.slot_jsondata.json"
                         }
                     }
                 }

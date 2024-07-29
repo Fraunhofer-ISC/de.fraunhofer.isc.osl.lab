@@ -1,0 +1,19 @@
+{
+    "type": [
+        "Category:DataProperty"
+    ],
+    "name": "HasNominalExpenditureOfTime",
+    "property_type": "Text",
+    "uuid": "b289f358-e530-4ed0-819c-677013dd392f",
+    "label": [
+        {
+            "text": "Nominal expenditure of time",
+            "lang": "en"
+        },
+        {
+            "text": "Geplante Bearbeitungszeit",
+            "lang": "de"
+        }
+    ],
+    "description": []
+}

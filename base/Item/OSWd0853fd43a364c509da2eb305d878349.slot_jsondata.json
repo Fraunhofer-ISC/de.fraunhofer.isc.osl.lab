@@ -1,0 +1,27 @@
+{
+    "type": [
+        "Category:OSW9d4553ced7324cdc9088cdb786c339f8"
+    ],
+    "uuid": "d0853fd4-3a36-4c50-9da2-eb305d878349",
+    "label": [
+        {
+            "text": "Old mineral wool",
+            "lang": "en"
+        },
+        {
+            "text": "Alt-Mineralwolle",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Old mineral wool from building demolitions, for example",
+            "lang": "en"
+        },
+        {
+            "text": "Mineralwolle-Altbestand etwa aus Gebäudeabrissen",
+            "lang": "de"
+        }
+    ],
+    "name": "OldMineralWool"
+}
