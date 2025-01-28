@@ -50,6 +50,9 @@
                         "footer": {
                             "urlPath": "Category/OSW89d01b6ec9e9412aa6fadf244f59cc78.slot_footer.wikitext"
                         },
+                        "footer_template": {
+                            "urlPath": "Category/OSW89d01b6ec9e9412aa6fadf244f59cc78.slot_footer_template.wikitext"
+                        },
                         "header": {
                             "urlPath": "Category/OSW89d01b6ec9e9412aa6fadf244f59cc78.slot_header.wikitext"
                         },
