@@ -42,6 +42,18 @@
             },
             "propertyOrder": -100
         },
+        "billing_address": {
+            "$comment": "import schema from OrganizationalUnit",
+            "$ref": "/wiki/Category:OSW3cb8cef2225e403092f098f99bc4c472?action=raw&slot=jsonschema#/properties/postal_address",
+            "title": "Billing address",
+            "title*": {
+                "de": "Rechnungsadresse"
+            },
+            "description": "If different from postal address",
+            "description*": {
+                "de": "Falls von der Anschrift abweichend"
+            }
+        },
         "contact_persons": {
             "title": "Contact person(s)",
             "title*": {
@@ -75,6 +87,13 @@
                 "de": "Anmerkungen"
             },
             "propertyOrder": 10001
+        },
+        "euceb_number": {
+            "type": "string",
+            "title": "EUCEB number",
+            "title*": {
+                "de": "EUCEB Nummer"
+            }
         }
     }
 }
